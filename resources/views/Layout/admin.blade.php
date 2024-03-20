@@ -62,14 +62,11 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Cabang<i
+                        <a href=""><i class="material-icons-two-tone">star</i>Voli<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="{{ url('/experience/create') }}">Create Experience</a>
-                            </li>
-                            <li>
-                                <a href="{{ url('/experience') }}">All Experience</a>
+                                <a href="{{ route('admin.voli') }}">Data Voli</a>
                             </li>
                         </ul>
                     </li>
