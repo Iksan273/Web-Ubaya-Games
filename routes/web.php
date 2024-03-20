@@ -23,8 +23,8 @@ Route::get('/register', [AuthController::class, 'registerForm'])->name('register
 Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// halama voli for user//
-// Route::view('/voli2', 'voli.index')->name('voli.index');
+// halaman voli for user//
+Route::view('/voli2', 'voli.index')->name('voli.index');
 Route::view('/formVoli', 'voli.register')->name('voli.form');
 Route::post('/register/voli', [VoliController::class, 'store'])->name('register.voli');
 
