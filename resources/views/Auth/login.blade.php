@@ -43,6 +43,11 @@
             {{ session('success') }}
         </div>
     @endif
+    @error('email')
+        <div class="alert alert-danger">{{ $message }}</div>
+    @enderror
+
+
     <div class="app app-auth-sign-in align-content-stretch d-flex flex-wrap justify-content-end">
         <div class="app-auth-background">
         </div>

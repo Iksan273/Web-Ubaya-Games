@@ -40,6 +40,10 @@
 <body>
     <div class="app align-content-stretch d-flex flex-wrap">
         <div class="app-sidebar">
+            <div class="logo">
+                <a href="index.html" class="logo-icon"><span class="logo-text">Neptune</span></a>
+
+            </div>
             <div class="app-menu">
                 <ul class="accordion-menu">
                     <li class="sidebar-title">
@@ -58,7 +62,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Experience<i
+                        <a href=""><i class="material-icons-two-tone">star</i>Cabang<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -70,7 +74,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Project<i
+                        <a href=""><i class="material-icons-two-tone">star</i>Cabang<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -83,7 +87,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Organizational<i
+                        <a href=""><i class="material-icons-two-tone">star</i>Cabang<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -96,7 +100,7 @@
                     </li>
 
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Service<i
+                        <a href=""><i class="material-icons-two-tone">star</i>Cabang<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -111,17 +115,25 @@
                 </ul>
             </div>
         </div>
+
         <div class="app-container">
             <div class="app-header">
                 <nav class="navbar navbar-light navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Dashboard</a>
+                        <div class="navbar-nav" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link hide-sidebar-toggle-button" href="#"><i
+                                            class="material-icons">first_page</i></a>
+                                </li>
+                        </div>
+                        <a class="navbar-brand" href="{{ route('dashboard') }}">Dashboard</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <span class="nav-link">Selamat Datang, User!</span>
+                                <span class="nav-link">Selamat Datang, {{ $user->name }}!</span>
                                 <!-- Logout Form -->
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
@@ -131,6 +143,8 @@
                                 </a>
                             </div>
                         </div>
+
+
                     </div>
                 </nav>
             </div>
