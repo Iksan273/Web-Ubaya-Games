@@ -50,7 +50,7 @@
                         Admin Dashboard
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Admin<i
+                        <a href=""><i class="material-icons-two-tone">admin_panel_settings</i>Admin<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -60,7 +60,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Voli<i
+                        <a href=""><i class="material-icons-two-tone">folder</i>Voli<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -69,7 +69,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Basket<i
+                        <a href=""><i class="material-icons-two-tone">folder</i>Basket<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -78,7 +78,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Futsal<i
+                        <a href=""><i class="material-icons-two-tone">folder</i>Futsal<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -87,7 +87,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Badminton<i
+                        <a href=""><i class="material-icons-two-tone">folder</i>Badminton<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -97,7 +97,7 @@
                     </li>
 
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>dance<i
+                        <a href=""><i class="material-icons-two-tone">folder</i>dance<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -106,7 +106,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Esport<i
+                        <a href=""><i class="material-icons-two-tone">folder</i>Esport<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
