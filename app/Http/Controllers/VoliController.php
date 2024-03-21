@@ -66,10 +66,10 @@ class VoliController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('voli.index')->with('success', 'Data berhasil disimpan.');
+            return redirect()->route('voli.form')->with('success', 'Data berhasil disimpan.');
         } catch (Exception $e) {
 
-            return redirect()->route('voli.index')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('voli.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 

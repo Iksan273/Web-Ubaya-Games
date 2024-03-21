@@ -65,10 +65,10 @@ class EsportController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('esport.index')->with('success', 'Data berhasil disimpan.');
+            return redirect()->route('esport.form')->with('success', 'Data berhasil disimpan.');
         } catch (Exception $e) {
 
-            return redirect()->route('esport.index')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('esport.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 

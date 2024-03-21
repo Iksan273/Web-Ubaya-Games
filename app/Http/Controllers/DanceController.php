@@ -66,10 +66,10 @@ class DanceController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('dance.index')->with('success', 'Data berhasil disimpan.');
+            return redirect()->route('dance.form')->with('success', 'Data berhasil disimpan.');
         } catch (Exception $e) {
 
-            return redirect()->route('dance.index')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('dance.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 

@@ -29,7 +29,7 @@
     <link href="{{ asset('assets/plugins/dropzone/min/dropzone.min.css') }}" rel="stylesheet">
 
     <!-- Theme Styles -->
-    <link href="{{ asset('assets/css/main.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
     {{-- <link href="{{asset ('assets/css/darktheme.css')}}" rel="stylesheet"> --}}
     <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet">
 
@@ -41,7 +41,7 @@
     <div class="app align-content-stretch d-flex flex-wrap">
         <div class="app-sidebar">
             <div class="logo">
-                <a href="index.html" class="logo-icon"><span class="logo-text">Neptune</span></a>
+                <a href="{{ route('dashboard') }}" class="logo-icon">
 
             </div>
             <div class="app-menu">
@@ -54,11 +54,9 @@
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="">Create Admin</a>
+                                <a href="">Add Admin</a>
                             </li>
-                            <li>
-                                <a href="">All Admin</a>
-                            </li>
+
                         </ul>
                     </li>
                     <li>
@@ -71,42 +69,49 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Cabang<i
+                        <a href=""><i class="material-icons-two-tone">star</i>Basket<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="{{ url('/project/create') }}">Create Project</a>
+                                <a href="{{ route('admin.basket') }}">Data Basket</a>
                             </li>
-                            <li>
-                                <a href="{{ url('/project') }}">All Project</a>
-                            </li>
-
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Cabang<i
+                        <a href=""><i class="material-icons-two-tone">star</i>Futsal<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="{{ url('/organization/create') }}">Create Organizational</a>
+                                <a href="{{ route('admin.futsal') }}">Futsal</a>
                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="material-icons-two-tone">star</i>Badminton<i
+                                class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+                        <ul class="sub-menu">
                             <li>
-                                <a href="{{ url('/organization') }}">All Organizational</a>
+                                <a href="{{ route('admin.badminton') }}">Data Badminton</a>
                             </li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href=""><i class="material-icons-two-tone">star</i>Cabang<i
+                        <a href=""><i class="material-icons-two-tone">star</i>dance<i
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="{{ url('/service/create') }}">Create Service</a>
+                                <a href="{{ route('admin.dance') }}">Data Dance</a>
                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="material-icons-two-tone">star</i>Esport<i
+                                class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+                        <ul class="sub-menu">
                             <li>
-                                <a href="{{ url('/service') }}">All Service</a>
+                                <a href="{{ route('admin.esport') }}">Data Esport</a>
                             </li>
-
                         </ul>
                     </li>
                 </ul>

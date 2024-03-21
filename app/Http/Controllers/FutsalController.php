@@ -25,7 +25,7 @@ class FutsalController extends Controller
         $futsal = Futsal::findOrFail($id);
         return view('admin.futsal.futsal_edit', [
             'user' => $user,
-            'esport' => $futsal
+            'futsal' => $futsal
         ]);
     }
     public function store(Request $request)
@@ -65,26 +65,15 @@ class FutsalController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('futsal.index')->with('success', 'Data berhasil disimpan.');
+            return redirect()->route('futsal.form')->with('success', 'Data berhasil disimpan.');
         } catch (Exception $e) {
 
-            return redirect()->route('futsal.index')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('futsal.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 
     public function update(Request $request, $id)
     {
-        // $validator = Validator::make($request->all(), [
-        //     'nama_kontingen' => 'required',
-        //     'fakultas' => 'required',
-        //     'file' => 'sometimes|file|mimes:pdf,doc,docx|max:2048',
-        // ]);
-
-        // if ($validator->fails()) {
-        //     return redirect()->back()
-        //         ->withErrors($validator)
-        //         ->withInput();
-        // }
 
         try {
             $futsal = Futsal::findOrFail($id);

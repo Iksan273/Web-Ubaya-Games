@@ -66,27 +66,15 @@ class BasketController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('basket.index')->with('success', 'Data berhasil disimpan.');
+            return redirect()->route('basket.form')->with('success', 'Data berhasil disimpan.');
         } catch (Exception $e) {
 
-            return redirect()->route('basket.index')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('basket.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 
     public function update(Request $request, $id)
     {
-        // $validator = Validator::make($request->all(), [
-        //     'nama_kontingen' => 'required',
-        //     'fakultas' => 'required',
-        //     'file' => 'sometimes|file|mimes:pdf,doc,docx|max:2048',
-        // ]);
-
-        // if ($validator->fails()) {
-        //     return redirect()->back()
-        //         ->withErrors($validator)
-        //         ->withInput();
-        // }
-
         try {
             $basket = Basket::findOrFail($id);
 
@@ -132,6 +120,6 @@ class BasketController extends Controller
         $basket->delete();
 
 
-        return redirect()->route('admin.voli')->with('success', 'Data berhasil dihapus!');
+        return redirect()->route('admin.basket')->with('success', 'Data berhasil dihapus!');
     }
 }

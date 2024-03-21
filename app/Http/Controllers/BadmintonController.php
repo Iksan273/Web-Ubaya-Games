@@ -6,6 +6,7 @@ use App\Models\Badminton;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
 class BadmintonController extends Controller
@@ -26,7 +27,7 @@ class BadmintonController extends Controller
         $badminton = Badminton::findOrFail($id);
         return view('admin.badminton.badminton_edit', [
             'user' => $user,
-            'voli' => $badminton
+            'badminton' => $badminton
         ]);
     }
     public function store(Request $request)
@@ -66,50 +67,52 @@ class BadmintonController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('badminton.index')->with('success', 'Data berhasil disimpan.');
+            return redirect()->route('badminton.form')->with('success', 'Data berhasil disimpan.');
         } catch (Exception $e) {
 
-            return redirect()->route('badminton.index')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('badminton.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 
     public function update(Request $request, $id)
-    {
-        // $validator = Validator::make($request->all(), [
-        //     'nama_kontingen' => 'required',
-        //     'fakultas' => 'required',
-        //     'file' => 'sometimes|file|mimes:pdf,doc,docx|max:2048',
-        // ]);
+{
+    $request->validate([
+        'nama_kontingen' => 'required',
+        'fakultas' => 'required',
+        'file' => 'sometimes|nullable|file|mimes:pdf|max:20480',
+    ]);
 
-        // if ($validator->fails()) {
-        //     return redirect()->back()
-        //         ->withErrors($validator)
-        //         ->withInput();
-        // }
+    try {
+        $badminton = Badminton::findOrFail($id);
 
-        try {
-            $badminton = Badminton::findOrFail($id);
+        $updateData = [
+            'nama_kontingen' => $request->nama_kontingen,
+            'fakultas' => $request->fakultas,
+        ];
 
-            $updateData = [
-                'nama_kontingen' => $request->nama_kontingen,
-                'fakultas' => $request->fakultas,
-            ];
-
-            // Hanya update file jika ada file baru yang diunggah
-            if ($request->hasFile('file')) {
-                $file = $request->file('file');
-                $filename = time() . '_' . $file->getClientOriginalName();
-                $file->move(public_path('badminton/files'), $filename);
-                $updateData['file'] = $filename;
+        if ($request->hasFile('file')) {
+            // Hapus file lama jika ada
+            $oldFile = $badminton->file;
+            if ($oldFile && file_exists(public_path('badminton/files/' . $oldFile))) {
+                unlink(public_path('badminton/files/' . $oldFile));
             }
 
-            $badminton->update($updateData);
 
-            return redirect()->route('admin.badminton')->with('success', 'Data berhasil diupdate!');
-        } catch (\Exception $e) {
-            return redirect()->route('admin.badminton')->with('error', 'Terjadi kesalahan saat mengupdate data.');
+            $file = $request->file('file');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('badminton/files'), $filename);
+            $updateData['file'] = $filename;
         }
+
+
+        $badminton->update($updateData);
+
+        return redirect()->route('admin.badminton')->with('success', 'Data berhasil diupdate!');
+    } catch (Exception $e) {
+        return redirect()->route('admin.badminton')->with('error', 'Terjadi kesalahan saat mengupdate data: ' . $e->getMessage());
     }
+}
+
 
 
     public function delete($id)
@@ -132,6 +135,6 @@ class BadmintonController extends Controller
         $badminton->delete();
 
 
-        return redirect()->route('admin.voli')->with('success', 'Data berhasil dihapus!');
+        return redirect()->route('admin.badminton')->with('success', 'Data berhasil dihapus!');
     }
 }
