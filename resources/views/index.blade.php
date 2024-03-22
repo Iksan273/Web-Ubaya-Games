@@ -35,7 +35,7 @@ Home
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
                                 id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"> pendaftaran </a>
+                                aria-expanded="false"> Pendaftaran </a>
                             <div class="dropdown-menu drop-down-content">
                                 <ul class="list-unstyled drop-down-pages">
                                     <li class="nav-item">
