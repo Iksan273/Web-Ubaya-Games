@@ -39,9 +39,11 @@
                                     <td>{{ $data->nama_kontingen }}</td>
                                     <td>{{ $data->fakultas }}</td>
                                     <td>
-                                        <button type="button" class="btn btn-success text-white">
-                                            <a href="{{ asset('basket/files/' . $data->file) }}" style="color: white; text-decoration: none;">View</a>
-                                        </button>
+
+                                            <a href="{{ asset('basket/files/' . $data->file) }}" style="color: white; text-decoration: none;">
+                                                <button type="button" class="btn btn-success text-white"> View </button>
+                                            </a>
+
 
 
 
