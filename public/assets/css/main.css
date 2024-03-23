@@ -28,6 +28,7 @@ html {
     overflow-x: hidden;
 }
 
+
 body {
 
     background-color: #E7ECF8;
@@ -77,6 +78,10 @@ b, strong, .bold {
 /*------------------------------------------------------------
 [1. Global Styles]
 ------------------------------------------------------------*/
+.btn-link {
+    color: #ffffff !important;
+    text-decoration: none;
+}
 
 /* Overflow */
 
