@@ -39,11 +39,10 @@
                                     <td>{{ $data->nama_kontingen }}</td>
                                     <td>{{ $data->fakultas }}</td>
                                     <td>
-                                        <a href="{{ asset('basket/files/' . $data->file) }}" target="_blank">
-                                            <button type="button" class="btn btn-success">
-                                                View File
-                                            </button>
+                                        <a href="http://docs.google.com/gview?url={{ urlencode(asset('basket/files/' . $data->file)) }}&embedded=true" target="_blank">
+                                            <button type="button" class="btn btn-success">View File</button>
                                         </a>
+
                                         &nbsp; <!-- Menambahkan spasi antara tombol -->
                                         <a href="{{ asset('basket/files/' . $data->file) }}" download="{{ $data->file }}">
                                             <button type="button" class="btn btn-primary">
