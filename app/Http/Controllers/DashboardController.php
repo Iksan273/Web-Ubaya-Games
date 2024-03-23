@@ -24,7 +24,7 @@ class DashboardController extends Controller
     $esportCount = Esport::count();
     $voliCount = Voli::count();
 
-    return view('admin.dashboard', [
+    return view('Admin.dashboard', [
         'user' => $user,
         'danceCount' => $danceCount,
         'badmintonCount' => $badmintonCount,
@@ -58,6 +58,6 @@ public function AllData()
 
     public function adminForm(){
         $user = Auth::user();
-        return view('admin.add_admin', ['user' => $user]);
+        return view('Admin.add_admin', ['user' => $user]);
     }
 }
