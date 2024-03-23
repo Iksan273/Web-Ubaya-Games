@@ -39,11 +39,8 @@
                                     <td>{{ $data->nama_kontingen }}</td>
                                     <td>{{ $data->fakultas }}</td>
                                     <td>
-                                        <a href="{{ asset('dance/files/' . $data->file) }}" target="_blank"
-                                            rel="noopener noreferrer">
-                                            <button type="button" class="btn btn-success">
-                                                View File
-                                            </button>
+                                        <a href="{{ asset('dance/files/' . $data->file) }}" style="color: white; text-decoration: none;">
+                                            <button type="button" class="btn btn-success text-white"> View </button>
                                         </a>
                                         &nbsp; <!-- Menambahkan spasi antara tombol -->
                                         <a href="{{ asset('dance/files/' . $data->file) }}" download="{{ $data->file }}"
