@@ -358,6 +358,6 @@
 
     </section>
 
-    @include('Layout.footer')
+    @include('layout.footer')
 
 @endsection
