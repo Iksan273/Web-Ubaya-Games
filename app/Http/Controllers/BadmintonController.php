@@ -72,10 +72,10 @@ class BadmintonController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('home')->with('success', 'Pendaftaran Cabang Badminton Berhasil');
+            return redirect()->route('RegisterBerhasil')->with('success', 'Pendaftaran Cabang Badminton Berhasil');
         } catch (Exception $e) {
 
-            return redirect()->route('home')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('badminton.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 

@@ -34,6 +34,26 @@ class DashboardController extends Controller
         'voliCount' => $voliCount,
     ]);
 }
+public function AllData()
+{
+
+
+    $danceCount = Dance::all();
+    $badmintonCount = Badminton::all();
+    $futsalCount = Futsal::all();
+    $basketCount = Basket::all();
+    $esportCount = Esport::all();
+    $voliCount = Voli::all();
+
+    return view('status', [
+        'dance' => $danceCount,
+        'badminton' => $badmintonCount,
+        'futsal' => $futsalCount,
+        'basket' => $basketCount,
+        'esport' => $esportCount,
+        'voli' => $voliCount,
+    ]);
+}
 
 
     public function adminForm(){

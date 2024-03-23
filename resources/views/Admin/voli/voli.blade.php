@@ -27,7 +27,9 @@
                                 <th class="text-white">Fakultas</th>
                                 <th class="text-white">File Pendaftaran</th>
                                 <th class="text-white">Actions</th>
+                                <th class="text-white">Status</th>
                                 <th class="text-white">Tanggal Daftar</th>
+                                <th class="text-white">Tanggal Update</th>
 
                             </tr>
                         </thead>
@@ -58,7 +60,13 @@
                                         <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
                                             data-bs-target="#deleteModal{{ $voli->id }}">Delete</button>
                                     </td>
-                                    <td>{{ $voli->formatted_tanggal}}</td>
+                                    <td>
+                                        <span class="badge {{ $voli->status == 'pending' ? 'bg-primary' : ($voli->status == 'accepted' ? 'bg-success' : 'bg-danger') }}">
+                                            {{ ucfirst($voli->status) }}
+                                        </span>
+                                    </td>
+                                    <td>{{ $voli->created_at->format('Y-m-d') }}</td>
+                                    <td>{{ $voli->updated_at->format('Y-m-d') }}</td>
                                 </tr>
                                  <!-- Modal Delete -->
                             <div class="modal fade" id="deleteModal{{ $voli->id }}" tabindex="-1" aria-labelledby="deleteModalLabel"

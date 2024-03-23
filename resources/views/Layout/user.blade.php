@@ -5,10 +5,12 @@
      <!-- /SEO Ultimate -->
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
      <meta charset="utf-8">
-     <link rel="icon" type="image/png" sizes="192x192"
+
+
+     <link rel="icon" type="image/png"
          href="{{ asset('assets/images/logoUGMINI.png') }}">
 
-     <link rel="manifest" href="{{ asset('assetUser/images/favicon/manifest.json') }}">
+
      <link rel="stylesheet"
          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
      <meta name="msapplication-TileColor" content="#ffffff">

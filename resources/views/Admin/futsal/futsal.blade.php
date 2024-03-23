@@ -27,7 +27,9 @@
                                 <th class="text-white">Fakultas</th>
                                 <th class="text-white">File Pendaftaran</th>
                                 <th class="text-white">Actions</th>
+                                <th class="text-white">Status</th>
                                 <th class="text-white">Tanggal Daftar</th>
+                                <th class="text-white">Tanggal Update</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -57,7 +59,13 @@
                                         <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
                                             data-bs-target="#deleteModal{{ $data->id }}">Delete</button>
                                     </td>
-                                    <td>{{ $data->formatted_tanggal}}</td>
+                                    <td>
+                                        <span class="badge {{ $data->status == 'pending' ? 'bg-primary' : ($data->status == 'accepted' ? 'bg-success' : 'bg-danger') }}">
+                                            {{ ucfirst($data->status) }}
+                                        </span>
+                                    </td>
+                                    <td>{{ $data->created_at->format('Y-m-d') }}</td>
+                                    <td>{{ $data->updated_at->format('Y-m-d') }}</td>
 
                                 </tr>
                                  <!-- Modal Delete -->

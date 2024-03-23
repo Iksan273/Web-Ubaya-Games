@@ -71,7 +71,7 @@ class BasketController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('basket.form')->with('success', 'Data berhasil disimpan.');
+            return redirect()->route('RegisterBerhasil')->with('success', 'Pendaftaran Cabang Basket Berhasil.');
         } catch (Exception $e) {
 
             return redirect()->route('basket.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');

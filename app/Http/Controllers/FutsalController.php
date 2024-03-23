@@ -70,7 +70,7 @@ class FutsalController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('futsal.form')->with('success', 'Data berhasil disimpan.');
+            return redirect()->route('RegisterBerhasil')->with('success', 'Pendaftaran Cabang Futsal Berhasil');
         } catch (Exception $e) {
 
             return redirect()->route('futsal.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');

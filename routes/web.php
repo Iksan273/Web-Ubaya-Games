@@ -62,6 +62,11 @@ Route::get('/peraturan', function () {
     return view('peraturan');
 })->name('peraturan');
 
+Route::get('/register-done', function () {
+    return view('berhasil');
+})->name('RegisterBerhasil');
+
+Route::get('/status-pendaftaran',[DashboardController::class, 'AllData'])->name('StatusPendaftaran');
 //halaman admin dan view admin routing//
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');

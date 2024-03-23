@@ -54,7 +54,7 @@
                                 class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="">Add Admin</a>
+                                <a href="{{ route('add-admin.form') }}">Add Admin</a>
                             </li>
 
                         </ul>
