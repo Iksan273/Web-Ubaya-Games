@@ -40,7 +40,7 @@
                                     <td>{{ $voli->nama_kontingen }}</td>
                                     <td>{{ $voli->fakultas }}</td>
                                     <td>
-                                         <a href="{{ asset('voli/files/' . $data->file) }}" style="color: white; text-decoration: none;">
+                                         <a href="{{ asset('voli/files/' . $voli->file) }}" style="color: white; text-decoration: none;">
                                                 <button type="button" class="btn btn-success text-white"> View </button>
                                             </a>
                                         &nbsp; <!-- Menambahkan spasi antara tombol -->
