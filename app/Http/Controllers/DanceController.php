@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Dance;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -13,7 +14,10 @@ class DanceController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $dance = Dance::all();
+        $dance = Dance::all()->map(function($data){
+            $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
+            return $data;
+        });
         return view('admin.dance.dance', [
             'dance' => $dance,
             'user' => $user

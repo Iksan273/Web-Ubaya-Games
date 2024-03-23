@@ -18,7 +18,7 @@
                         <a class="nav-link" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Peraturan</a>
+                        <a class="nav-link" href="{{ url('peraturan') }}">Peraturan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">Score</a>

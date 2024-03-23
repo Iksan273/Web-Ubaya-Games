@@ -70,6 +70,24 @@ body {
 
 /* Home Page Style */
 
+/* Style ini akan berlaku untuk layar dengan lebar maksimal 768px */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 50px; /* Ukuran lebih kecil untuk mobile */
+        height: auto; /* Menjaga aspek rasio */
+    }
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: white;
+}
+
 .banner-section-outer{
     background-image: url('../images/UG/backgroundUG1.png');
     background-size: cover;
@@ -505,7 +523,8 @@ body {
     background-color: #00aeef;
   }
   .background2{
-    background-color: var(--primary--color);
+    background-image: url('../images/UG/timeline.png');
+    /* background-color: var(--primary--color); */
   }
 
   /* The circles on the timeline */

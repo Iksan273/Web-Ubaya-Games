@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Basket;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,6 +15,10 @@ class BasketController extends Controller
     {
         $user = Auth::user();
         $basket = Basket::all();
+        $basket = Basket::all()->map(function($data){
+            $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
+            return $data;
+        });
         return view('admin.basket.basket', [
             'basket' => $basket,
             'user' => $user

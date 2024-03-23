@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Futsal;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -12,7 +13,10 @@ class FutsalController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $futsal = Futsal::all();
+        $futsal = Futsal::all()->map(function($data){
+            $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
+            return $data;
+        });
         return view('admin.futsal.futsal', [
             'futsal' => $futsal,
             'user' => $user

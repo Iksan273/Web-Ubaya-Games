@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Badminton;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -15,6 +16,10 @@ class BadmintonController extends Controller
     {
         $user = Auth::user();
         $badminton = Badminton::all();
+        $badminton = Badminton::all()->map(function($data){
+            $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
+            return $data;
+        });
         return view('admin.badminton.badminton', [
             'badminton' => $badminton,
             'user' => $user
@@ -67,10 +72,10 @@ class BadmintonController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('badminton.form')->with('success', 'Data berhasil disimpan.');
+            return redirect()->route('home')->with('success', 'Pendaftaran Cabang Badminton Berhasil');
         } catch (Exception $e) {
 
-            return redirect()->route('badminton.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('home')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 

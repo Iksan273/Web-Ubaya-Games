@@ -79,7 +79,7 @@
         background-size: auto;
     }
 
-    .navbar { 
+    .navbar {
         padding: 20px 0;
     }
     .navbar-nav li {
@@ -115,7 +115,7 @@
         top: 85px;
         left: 235px;
     }
-    
+
     .top-creactor_section .top-creator_shape{
         top: 40px;
         left: -356px;
@@ -228,7 +228,7 @@
         margin-left: 115px;
     }
     .navbar-brand img{
-        width: 225px;
+        width: 100px;
     }
 
     .banner-section {
@@ -382,7 +382,7 @@
         width: 45px;
         height: 45px;
         line-height: 45px;
-        margin: 0 0 0 5px; 
+        margin: 0 0 0 5px;
     }
     .trading_auctions-section .owl-carousel .owl-nav button.owl-next span{
         font-size: 24px;
@@ -629,7 +629,7 @@
         top: -50px;
         left: 15px;
     }
-    
+
     .super_rare-section {
         padding: 100px 0 150px;
     }
@@ -789,7 +789,7 @@
     .collections_section .collections_shape {
         top: 55px;
         left: 90px;
-    } 
+    }
     .collections_section .nav-tabs {
         padding: 0 195px;
         margin-bottom: 45px;
@@ -1015,116 +1015,116 @@
         right: 20px;
     }
 
-    .partner-section { 
-        padding: 100px 0; 
+    .partner-section {
+        padding: 100px 0;
     }
-    .partner-section .heading { 
-        padding-top: 70px; 
+    .partner-section .heading {
+        padding-top: 70px;
     }
     .partner-section .auction-middle .left {
-        width: 50%; 
+        width: 50%;
     }
-    .partner-section .auction-middle .right { 
-        width: 50%; 
+    .partner-section .auction-middle .right {
+        width: 50%;
     }
-    .partner-section .auction-middle .name { 
-        font-size: 17px; 
+    .partner-section .auction-middle .name {
+        font-size: 17px;
     }
-    .partner-section .auction-bottom a { 
-        padding: 12px 16px; 
+    .partner-section .auction-bottom a {
+        padding: 12px 16px;
     }
-    .partner-section .owl-carousel .owl-nav button.owl-next, .partner-section .owl-carousel .owl-nav button.owl-prev { 
-        width: 50px; 
-        height: 50px; 
-        line-height: 50px; 
+    .partner-section .owl-carousel .owl-nav button.owl-next, .partner-section .owl-carousel .owl-nav button.owl-prev {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
     }
-    .partner-section .owl-carousel .owl-nav button.owl-next span, .partner-section .owl-carousel .owl-nav button.owl-prev span { 
-        font-size: 22px; 
-        line-height: 48px; 
+    .partner-section .owl-carousel .owl-nav button.owl-next span, .partner-section .owl-carousel .owl-nav button.owl-prev span {
+        font-size: 22px;
+        line-height: 48px;
     }
-    .explore-section { 
-        padding: 100px 0 130px 0; 
+    .explore-section {
+        padding: 100px 0 130px 0;
     }
-    .explore-section .heading { 
-        padding-left: 0; 
+    .explore-section .heading {
+        padding-left: 0;
     }
-    .explore-section .explore-img-1 { 
-        width: 260px; 
+    .explore-section .explore-img-1 {
+        width: 260px;
     }
-    .explore-section .explore-img-3 { 
-        width: 240px; 
+    .explore-section .explore-img-3 {
+        width: 240px;
     }
-    .explore-section .explore-img-2 { 
-        right: -70px; 
+    .explore-section .explore-img-2 {
+        right: -70px;
     }
-    .explore-section .circle-1 { 
-        top: 210px; 
+    .explore-section .circle-1 {
+        top: 210px;
     }
-    .product-detail { 
-        padding: 100px 0; 
+    .product-detail {
+        padding: 100px 0;
     }
-    .product-detail .product-tab ul li { 
-        width: 31.2%; 
+    .product-detail .product-tab ul li {
+        width: 31.2%;
     }
-    .product-detail .auction-top .bidder { 
-        font-size: 16px; 
-        line-height: 24px; 
+    .product-detail .auction-top .bidder {
+        font-size: 16px;
+        line-height: 24px;
     }
-    .product-detail .auction-middle .name { 
-        font-size: 16px; 
+    .product-detail .auction-middle .name {
+        font-size: 16px;
     }
-    .product-detail .auction-middle .ending { 
-        font-size: 16px; 
-        line-height: 24px; 
+    .product-detail .auction-middle .ending {
+        font-size: 16px;
+        line-height: 24px;
     }
-    .product-detail .auction-middle .left { 
-        width: 60%; 
+    .product-detail .auction-middle .left {
+        width: 60%;
     }
-    .product-detail .auction-middle .right { 
-        width: 40%; 
+    .product-detail .auction-middle .right {
+        width: 40%;
     }
-    .product-detail .auction-top figure { 
-        margin-right: 10px; 
+    .product-detail .auction-top figure {
+        margin-right: 10px;
     }
-    .product-detail .heading ul li { 
-        font-size: 16px; 
-        line-height: 24px; 
+    .product-detail .heading ul li {
+        font-size: 16px;
+        line-height: 24px;
     }
-    .product-detail .heading { 
-        margin-bottom: 30px; 
+    .product-detail .heading {
+        margin-bottom: 30px;
     }
 
-    .product-section { 
-        padding: 100px 0 70px 0; 
+    .product-section {
+        padding: 100px 0 70px 0;
     }
-    .product-section .product-box-top .name { 
-        font-size: 12px; 
+    .product-section .product-box-top .name {
+        font-size: 12px;
     }
-    .product-section .product-box-top .rate span { 
-        font-size: 12px; 
+    .product-section .product-box-top .rate span {
+        font-size: 12px;
     }
-    .product-section .product-box-top .rate i { 
-        font-size: 12px; 
+    .product-section .product-box-top .rate i {
+        font-size: 12px;
     }
-    .nft-section { 
-        padding: 100px 0; 
+    .nft-section {
+        padding: 100px 0;
     }
-    .nft-section .circle { 
-        right: -25px; 
+    .nft-section .circle {
+        right: -25px;
     }
-    .nft-section .create-nft-box .form-group { 
-        width: 46.5%; 
+    .nft-section .create-nft-box .form-group {
+        width: 46.5%;
     }
-    .checkout-section .preview-box .btn-outer .btn { 
-        font-size: 16px; 
-        line-height: 16px; 
-        padding: 18px 18px; 
+    .checkout-section .preview-box .btn-outer .btn {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 18px 18px;
     }
 }
 
 @media screen and (max-width: 991px){
     .navbar-collapse {
-        background: #491066;
+        background: #3a7b9e;
         position: absolute;
         right: 0px;
         width: 30%;
@@ -2159,201 +2159,201 @@
         right: 10px;
     }
 
-    .login-form .login-form-title { 
-        margin-bottom: 30px; 
+    .login-form .login-form-title {
+        margin-bottom: 30px;
     }
-    .login-form .login-card .btn-primary { 
-        font-size: 16px; line-height: 16px; 
+    .login-form .login-card .btn-primary {
+        font-size: 16px; line-height: 16px;
     }
-    .login-form .login-card .forgot-password { 
-        font-size: 16px; 
+    .login-form .login-card .forgot-password {
+        font-size: 16px;
     }
-    .login-form .login-form-box .join-now-outer a { 
+    .login-form .login-form-box .join-now-outer a {
         font-size: 16px;
     }
 
-    .partner-section { 
-        padding: 70px 0; 
+    .partner-section {
+        padding: 70px 0;
     }
-    .partner-section .heading { 
-        padding-top: 40px; 
-        margin-bottom: 30px; 
+    .partner-section .heading {
+        padding-top: 40px;
+        margin-bottom: 30px;
     }
-    .partner-section .owl-carousel .owl-nav { 
-        margin-top: 30px; 
+    .partner-section .owl-carousel .owl-nav {
+        margin-top: 30px;
     }
-    .explore-section { 
-        padding: 70px 0; 
+    .explore-section {
+        padding: 70px 0;
     }
-    .explore-section .explore-img-1 { 
-        width: 185px; 
+    .explore-section .explore-img-1 {
+        width: 185px;
     }
-    .explore-section .explore-img-3 { 
-        width: 180px; 
+    .explore-section .explore-img-3 {
+        width: 180px;
     }
-    .explore-section .explore-img-2 { 
-        right: -50px; 
-        width: 135px; 
-        top: 25px; 
+    .explore-section .explore-img-2 {
+        right: -50px;
+        width: 135px;
+        top: 25px;
     }
-    .explore-section .circle-1 { 
-        top: 150px; 
-        width: 65px; 
-        left: -25px; 
+    .explore-section .circle-1 {
+        top: 150px;
+        width: 65px;
+        left: -25px;
     }
-    .explore-section .heading a { 
-        font-size: 16px; 
-        line-height: 16px; 
-        padding: 18px 40px; 
+    .explore-section .heading a {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 18px 40px;
     }
-    .explore-section .heading { 
-        padding-top: 0; 
+    .explore-section .heading {
+        padding-top: 0;
     }
     .product-detail .product-tab ul li {
-        width: 30.5%; 
+        width: 30.5%;
     }
-    .product-detail .auction-box { 
-        padding: 15px; 
+    .product-detail .auction-box {
+        padding: 15px;
     }
-    .product-detail .auction-middle .left { 
-        width: 55%; 
+    .product-detail .auction-middle .left {
+        width: 55%;
     }
-    .product-detail .auction-middle .right { 
-        width: 45%; 
+    .product-detail .auction-middle .right {
+        width: 45%;
     }
-    .product-detail .auction-middle .time { 
-        font-size: 14px; 
+    .product-detail .auction-middle .time {
+        font-size: 14px;
     }
     .product-detail .auction-middle {
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
-    .product-detail .heading { 
-        margin-bottom: 20px; 
+    .product-detail .heading {
+        margin-bottom: 20px;
     }
-    .product-detail .heading h5 { 
-        margin-bottom: 10px; 
+    .product-detail .heading h5 {
+        margin-bottom: 10px;
     }
-    .product-detail .heading h2 { 
-        margin-bottom: 15px; 
+    .product-detail .heading h2 {
+        margin-bottom: 15px;
     }
-    .product-detail .product-tab .tab-pane { 
-        padding: 15px; 
-    }
-
-    .product-section { 
-        padding: 70px 0 40px 0; 
-    }
-    .product-section .filter-list .btn { 
-        font-size: 14px; 
-        line-height: 14px; 
-        padding: 18px 25px; 
-        margin: 0 3px; 
-    }
-    .product-section .heading { 
-        margin-bottom: 30px; 
-    }
-    .product-section .filter-list { 
-        margin-bottom: 40px; 
-    }
-    .product-section .product-box figure img { 
-        width: 100%; 
-    }
-    .product-section .product-box { 
-        padding: 30px; 
-    }
-    .product-section .product-box-top .rate i { 
-        margin-right: 5px; 
-    }
-    .product-section .filter-list .circle { 
-        bottom: 70px; 
-        width: 60px; 
-    }
-    .nft-section { 
-        padding: 70px 0; 
-    }
-    .nft-section .preview-box-middle .left .name { 
-        font-size: 16px; 
-    }
-    .nft-section .preview-box-middle .right .bid { 
-        font-size: 13px; 
-    }
-    .nft-section .preview-box-middle .right .price { 
-        font-size: 16px; 
-    }
-    .nft-section .preview-box a { 
-        font-size: 16px; 
-        line-height: 16px; 
-        padding: 18px 23px; 
-    }
-    .nft-section .preview-box-middle { 
-        padding-bottom: 25px; 
-    }
-    .nft-section .create-nft-box .form-group .form-control { 
-        font-size: 14px; 
-        font-weight: 500; 
-        height: 50px; 
-        line-height: 50px; 
-        padding: 0 15px; 
-    }
-    .nft-section .create-nft-box .form-group select { 
-        background-position: 91% 21px !important; 
-    }
-    .nft-section .create-nft-box .form-group { 
-        width: 46.6%; 
-        margin: 0 6px 15px; 
-    }
-    .nft-section .create-nft-box .form-group textarea { 
-        height: 110px !important; 
-    }
-    .nft-section .create-nft-box .form-check { 
-        width: 100%; 
-        padding-top: 10px; 
-        padding-bottom: 20px; 
-    }
-    .nft-section .create-nft-box .btn { 
-        font-size: 16px; 
-        line-height: 16px; 
-        padding: 18px 40px; 
-        width: 97%; 
-        margin: 0 6px; 
-    }
-    .nft-section .create-nft-box .btn-outer { 
-        padding-top: 0px; 
-    }
-    .nft-section .create-nft-box .form-check input { 
-        width: 20px; 
-        height: 20px; 
-        line-height: 20px; 
-    }
-    .nft-section .create-nft-box .form-check label { 
-        line-height: 18px; 
-    }
-    .checkout-section .preview-box .product-outer .total { 
-        padding-top: 5px; 
-        font-size: 14px; 
-    }
-    .checkout-section .preview-box .total-price-outer .total { 
-        padding-top: 5px; 
-        font-size: 14px; 
-    }
-    #search input[type="search"] { 
-        font-size: 36px; 
-    }
-    .checkout-section .create-nft-box .form-group select { 
-        background-position: 94.3% 21px !important; 
+    .product-detail .product-tab .tab-pane {
+        padding: 15px;
     }
 
-    .cart-section .product-image { 
-        width: 20%; 
+    .product-section {
+        padding: 70px 0 40px 0;
     }
-    .cart-section .product-details { 
-        width: 30%; 
+    .product-section .filter-list .btn {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 18px 25px;
+        margin: 0 3px;
     }
-    .cart-section .product-price { 
-        width: 16%; 
+    .product-section .heading {
+        margin-bottom: 30px;
     }
-    .cart-section .product-quantity { 
-        width: 13%; 
+    .product-section .filter-list {
+        margin-bottom: 40px;
+    }
+    .product-section .product-box figure img {
+        width: 100%;
+    }
+    .product-section .product-box {
+        padding: 30px;
+    }
+    .product-section .product-box-top .rate i {
+        margin-right: 5px;
+    }
+    .product-section .filter-list .circle {
+        bottom: 70px;
+        width: 60px;
+    }
+    .nft-section {
+        padding: 70px 0;
+    }
+    .nft-section .preview-box-middle .left .name {
+        font-size: 16px;
+    }
+    .nft-section .preview-box-middle .right .bid {
+        font-size: 13px;
+    }
+    .nft-section .preview-box-middle .right .price {
+        font-size: 16px;
+    }
+    .nft-section .preview-box a {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 18px 23px;
+    }
+    .nft-section .preview-box-middle {
+        padding-bottom: 25px;
+    }
+    .nft-section .create-nft-box .form-group .form-control {
+        font-size: 14px;
+        font-weight: 500;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 15px;
+    }
+    .nft-section .create-nft-box .form-group select {
+        background-position: 91% 21px !important;
+    }
+    .nft-section .create-nft-box .form-group {
+        width: 46.6%;
+        margin: 0 6px 15px;
+    }
+    .nft-section .create-nft-box .form-group textarea {
+        height: 110px !important;
+    }
+    .nft-section .create-nft-box .form-check {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .nft-section .create-nft-box .btn {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 18px 40px;
+        width: 97%;
+        margin: 0 6px;
+    }
+    .nft-section .create-nft-box .btn-outer {
+        padding-top: 0px;
+    }
+    .nft-section .create-nft-box .form-check input {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+    .nft-section .create-nft-box .form-check label {
+        line-height: 18px;
+    }
+    .checkout-section .preview-box .product-outer .total {
+        padding-top: 5px;
+        font-size: 14px;
+    }
+    .checkout-section .preview-box .total-price-outer .total {
+        padding-top: 5px;
+        font-size: 14px;
+    }
+    #search input[type="search"] {
+        font-size: 36px;
+    }
+    .checkout-section .create-nft-box .form-group select {
+        background-position: 94.3% 21px !important;
+    }
+
+    .cart-section .product-image {
+        width: 20%;
+    }
+    .cart-section .product-details {
+        width: 30%;
+    }
+    .cart-section .product-price {
+        width: 16%;
+    }
+    .cart-section .product-quantity {
+        width: 13%;
     }
 }
 
@@ -3210,7 +3210,7 @@
     .upload_work_section .upload_work_shape{
         left: 20px;
         top: 20px;
-    } 
+    }
     .upload_work_section .upload_work_shape img{
         width: 45px;
     }
@@ -3350,246 +3350,246 @@
         width: 45px;
     }
 
-    .login-form .login-page-logo img { 
-        width: 210px; 
+    .login-form .login-page-logo img {
+        width: 210px;
     }
-    .login-form .login-form-box { 
-        width: 450px; 
+    .login-form .login-form-box {
+        width: 450px;
     }
-    .login-form .login-form-title { 
-        margin-bottom: 20px; 
+    .login-form .login-form-title {
+        margin-bottom: 20px;
     }
-    .login-form .login-card .btn-primary { 
-        font-size: 14px; line-height: 14px; padding: 14px 20px; 
+    .login-form .login-card .btn-primary {
+        font-size: 14px; line-height: 14px; padding: 14px 20px;
     }
-    .login-form .login-card .forgot-password { 
-        font-size: 14px; 
+    .login-form .login-card .forgot-password {
+        font-size: 14px;
     }
-    .login-form .login-card label { 
-        font-size: 14px; 
+    .login-form .login-card label {
+        font-size: 14px;
     }
-    .login-form .login-card .input-field { 
-        font-size: 14px; padding: 0 15px; height: 46px; line-height: 46px; 
+    .login-form .login-card .input-field {
+        font-size: 14px; padding: 0 15px; height: 46px; line-height: 46px;
     }
-    .login-form .login-card { 
-        margin-bottom: 20px; 
+    .login-form .login-card {
+        margin-bottom: 20px;
     }
-    .login-form .login-form-box .join-now-outer a { 
-        font-size: 14px; 
+    .login-form .login-form-box .join-now-outer a {
+        font-size: 14px;
     }
 
-    .partner-section { 
-        padding: 60px 0; 
+    .partner-section {
+        padding: 60px 0;
     }
-    .partner-section .heading { 
-        padding-top: 30px; 
+    .partner-section .heading {
+        padding-top: 30px;
     }
-    .partner-section .heading h6 { 
-        margin-bottom: 5px; 
+    .partner-section .heading h6 {
+        margin-bottom: 5px;
     }
-    .partner-section .auction-middle .name { 
-        font-size: 16px; line-height: 22px; 
+    .partner-section .auction-middle .name {
+        font-size: 16px; line-height: 22px;
     }
-    .partner-section .auction-top figure { 
-        margin-right: 10px; 
+    .partner-section .auction-top figure {
+        margin-right: 10px;
     }
-    .partner-section .auction-top .name { 
-        font-size: 14px; 
+    .partner-section .auction-top .name {
+        font-size: 14px;
     }
-    .partner-section .auction-middle .ending { 
-        font-size: 13px; 
+    .partner-section .auction-middle .ending {
+        font-size: 13px;
     }
-    .partner-section .auction-middle .time { 
-        font-size: 14px; 
+    .partner-section .auction-middle .time {
+        font-size: 14px;
     }
-    .partner-section .auction-bottom a { 
-        padding: 12px 14px; 
-        font-size: 14px; 
-        line-height: 14px; 
+    .partner-section .auction-bottom a {
+        padding: 12px 14px;
+        font-size: 14px;
+        line-height: 14px;
     }
-    .partner-section .auction-bottom .price { 
-        font-size: 18px; 
-        line-height: 18px; 
+    .partner-section .auction-bottom .price {
+        font-size: 18px;
+        line-height: 18px;
     }
-    .partner-section .owl-carousel .owl-nav button.owl-next, .partner-section .owl-carousel .owl-nav button.owl-prev { 
-        width: 40px; 
-        height: 40px; 
-        line-height: 40px; 
-        margin: 0 5px; 
+    .partner-section .owl-carousel .owl-nav button.owl-next, .partner-section .owl-carousel .owl-nav button.owl-prev {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 5px;
     }
-    .partner-section .owl-carousel .owl-nav button.owl-next span, .partner-section .owl-carousel .owl-nav button.owl-prev span { 
-        font-size: 18px; 
-        line-height: 30px; 
+    .partner-section .owl-carousel .owl-nav button.owl-next span, .partner-section .owl-carousel .owl-nav button.owl-prev span {
+        font-size: 18px;
+        line-height: 30px;
     }
-    .explore-section { 
-        padding: 60px 0; 
+    .explore-section {
+        padding: 60px 0;
     }
-    .explore-section .explore-img-1 { 
+    .explore-section .explore-img-1 {
         width: 250px;
     }
-    .explore-section .explore-img-3 { 
-        width: 235px; 
+    .explore-section .explore-img-3 {
+        width: 235px;
     }
-    .explore-section .explore-img-2 { 
-        right: -80px; 
-        width: 170px; 
+    .explore-section .explore-img-2 {
+        right: -80px;
+        width: 170px;
     }
-    .explore-section .circle-1 { 
+    .explore-section .circle-1 {
         top: 225px;
-        width: 50px; 
-        left: -20px; 
+        width: 50px;
+        left: -20px;
     }
-    .explore-section .heading h2 { 
+    .explore-section .heading h2 {
         margin-bottom: 10px;
-        padding: 0 30px; 
+        padding: 0 30px;
     }
-    .explore-section .heading p { 
-        margin-bottom: 25px; 
+    .explore-section .heading p {
+        margin-bottom: 25px;
     }
-    .explore-section .heading a { 
-        font-size: 14px; 
-        line-height: 14px; 
-        padding: 14px 30px; 
+    .explore-section .heading a {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 14px 30px;
     }
-    .product-detail .heading h2 { 
-        padding: 0; 
+    .product-detail .heading h2 {
+        padding: 0;
     }
-    .product-detail .heading p { 
-        margin-bottom: 15px; 
+    .product-detail .heading p {
+        margin-bottom: 15px;
         padding: 0 30px 0 0;
     }
-    .product-detail .auction-middle { 
-        margin-bottom: 20px; 
+    .product-detail .auction-middle {
+        margin-bottom: 20px;
     }
-    .product-detail .auction-middle .ending { 
-        font-size: 16px; 
+    .product-detail .auction-middle .ending {
+        font-size: 16px;
     }
-    .placebid-modal-wrapper .modal-header h3 { 
-        font-size: 26px; 
-        line-height: 32px; 
+    .placebid-modal-wrapper .modal-header h3 {
+        font-size: 26px;
+        line-height: 32px;
     }
     .placebid-modal-wrapper .btn-close svg {
-        height: 18px; 
-        line-height: 18px; 
+        height: 18px;
+        line-height: 18px;
     }
 
-    .product-section { 
-        padding: 60px 0 30px 0; 
+    .product-section {
+        padding: 60px 0 30px 0;
     }
-    .product-section .filter-list .btn { 
-        margin: 5px 3px; 
-        padding: 14px 25px; 
+    .product-section .filter-list .btn {
+        margin: 5px 3px;
+        padding: 14px 25px;
     }
-    .product-section .heading { 
-        margin-bottom: 25px; 
+    .product-section .heading {
+        margin-bottom: 25px;
     }
-    .product-section .filter-list { 
-        margin-bottom: 30px; 
+    .product-section .filter-list {
+        margin-bottom: 30px;
     }
-    .product-section .filter-list .circle { 
-        bottom: 125px; 
+    .product-section .filter-list .circle {
+        bottom: 125px;
     }
-    .product-section .product-box { 
-        padding: 20px; 
+    .product-section .product-box {
+        padding: 20px;
     }
     .product-section .product-box .btn-link {
-        font-size: 14px; 
-        line-height: 14px; 
-        padding: 12px 20px; 
+        font-size: 14px;
+        line-height: 14px;
+        padding: 12px 20px;
     }
-    .product-section .product-box-middle .price { 
-        font-size: 16px; 
+    .product-section .product-box-middle .price {
+        font-size: 16px;
     }
-    .product-section .product-box-bottom { 
-        padding-bottom: 20px; 
-        margin-bottom: 20px; 
+    .product-section .product-box-bottom {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
-    .product-section .product-box-bottom .name { 
-        font-size: 16px; 
-        line-height: 22px; 
+    .product-section .product-box-bottom .name {
+        font-size: 16px;
+        line-height: 22px;
     }
-    .nft-section { 
-        padding: 60px 0; 
+    .nft-section {
+        padding: 60px 0;
     }
-    .nft-section .circle { 
-        display: none; 
+    .nft-section .circle {
+        display: none;
     }
-    .nft-section .preview-box .preview-img img { 
-        width: 100%; 
+    .nft-section .preview-box .preview-img img {
+        width: 100%;
     }
-    .nft-section .create-nft-box .form-group label { 
-        font-size: 14px; 
-        line-height: 14px; 
+    .nft-section .create-nft-box .form-group label {
+        font-size: 14px;
+        line-height: 14px;
     }
-    .nft-section .create-nft-box .form-check label { 
-        font-size: 14px; 
-        line-height: 18px; 
-        margin-left: 10px; 
+    .nft-section .create-nft-box .form-check label {
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 10px;
     }
-    .nft-section .create-nft-box .form-group { 
+    .nft-section .create-nft-box .form-group {
         width: 47.9%;
-        margin: 0 5px 15px; 
+        margin: 0 5px 15px;
     }
-    .nft-section .create-nft-box .special { 
-        width: 98% !important; 
+    .nft-section .create-nft-box .special {
+        width: 98% !important;
     }
-    .nft-section .preview-box-middle .right { 
-        text-align: right; 
+    .nft-section .preview-box-middle .right {
+        text-align: right;
     }
-    #search input[type="search"] { 
-        font-size: 30px; 
+    #search input[type="search"] {
+        font-size: 30px;
     }
-    .checkout-section .create-nft-box .form-group select { 
-        background-position: 96.3% 21px !important; 
+    .checkout-section .create-nft-box .form-group select {
+        background-position: 96.3% 21px !important;
     }
 
-    .cart-section .product-detail-box { 
-        padding: 30px; 
+    .cart-section .product-detail-box {
+        padding: 30px;
     }
-    .cart-section .shopping-cart { 
-        margin: 0; 
-        padding-top: 20px; 
-        border-top: 1px solid #47476d; 
+    .cart-section .shopping-cart {
+        margin: 0;
+        padding-top: 20px;
+        border-top: 1px solid #47476d;
     }
-    .cart-section .column-labels { 
-        display: none; 
+    .cart-section .column-labels {
+        display: none;
     }
-    .cart-section .product-image { 
-        text-align: center; 
-        float: right; 
-        width: auto; 
+    .cart-section .product-image {
+        text-align: center;
+        float: right;
+        width: auto;
     }
     .cart-section .product-image img {
-        margin: 0 0 10px 10px; 
+        margin: 0 0 10px 10px;
     }
-    .cart-section .product-details { 
-        float: none; 
-        margin-bottom: 10px; 
-        width: auto; 
+    .cart-section .product-details {
+        float: none;
+        margin-bottom: 10px;
+        width: auto;
     }
-    .cart-section .product-price { 
-        clear: both; 
-        width: 90px; 
+    .cart-section .product-price {
+        clear: both;
+        width: 90px;
     }
-    .cart-section .product-quantity { 
-        width: 100px; 
+    .cart-section .product-quantity {
+        width: 100px;
     }
-    .cart-section .product-quantity input { 
-        margin-left: 20px; 
+    .cart-section .product-quantity input {
+        margin-left: 20px;
     }
-    .cart-section .product-quantity:before { 
-        content: 'x'; 
+    .cart-section .product-quantity:before {
+        content: 'x';
     }
-    .cart-section .product-removal { 
-        width: auto; 
+    .cart-section .product-removal {
+        width: auto;
     }
-    .cart-section .product-line-price { 
-        float: right; 
-        width: 70px; 
+    .cart-section .product-line-price {
+        float: right;
+        width: 70px;
     }
-    .cart-section .product .product-quantity input { 
-        width: 35px; 
-        height: 28px; 
+    .cart-section .product .product-quantity input {
+        width: 35px;
+        height: 28px;
     }
 }
 
@@ -3599,7 +3599,7 @@
         top: 50px;
     }
     .navbar-brand img {
-        width: 185px;
+        width: 80px;
     }
 
     .banner-section h6 {
@@ -4271,200 +4271,200 @@
         width: 35px;
     }
 
-    .login-form .login-page-logo img { 
+    .login-form .login-page-logo img {
         width: 190px;
     }
-    .login-form .login-page-logo { 
-        margin-bottom: 20px; 
+    .login-form .login-page-logo {
+        margin-bottom: 20px;
     }
-    .login-form .login-card { 
-        padding: 25px 20px; 
+    .login-form .login-card {
+        padding: 25px 20px;
     }
-    .login-form .login-form-box { 
-        width: 100%; 
+    .login-form .login-form-box {
+        width: 100%;
     }
 
-    .partner-section .auction-box { 
-        margin: 0 15px; 
-        width: auto; 
+    .partner-section .auction-box {
+        margin: 0 15px;
+        width: auto;
     }
-    .explore-section .explore-img-1 { 
-        width: 170px; 
+    .explore-section .explore-img-1 {
+        width: 170px;
     }
-    .explore-section .explore-img-2 { 
-        width: 90px; 
-        top: 20px; 
+    .explore-section .explore-img-2 {
+        width: 90px;
+        top: 20px;
     }
-    .explore-section .explore-img-3 { 
-        width: 140px; 
-        top: 85px; 
+    .explore-section .explore-img-3 {
+        width: 140px;
+        top: 85px;
     }
-    .explore-section .circle-1 { 
-        top: 145px; 
-        width: 45px; 
-        left: -15px; 
+    .explore-section .circle-1 {
+        top: 145px;
+        width: 45px;
+        left: -15px;
     }
-    .explore-section .heading h2 { 
-        padding: 0; 
-    }
-    .explore-section .heading p { 
-        margin-bottom: 20px; 
-    }
-    .product-detail .heading p { 
-        margin-bottom: 10px; 
+    .explore-section .heading h2 {
         padding: 0;
     }
-    .product-detail .heading ul li { 
-        font-size: 14px; 
+    .explore-section .heading p {
+        margin-bottom: 20px;
+    }
+    .product-detail .heading p {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .product-detail .heading ul li {
+        font-size: 14px;
         line-height: 24px;
-        margin-bottom: 5px; 
+        margin-bottom: 5px;
     }
-    .product-detail .auction-box { 
-        margin: 0; 
+    .product-detail .auction-box {
+        margin: 0;
     }
-    .product-detail .auction-middle { 
-        margin-bottom: 10px; 
+    .product-detail .auction-middle {
+        margin-bottom: 10px;
     }
-    .product-detail .auction-top .bidder { 
-        font-size: 14px; 
-        line-height: 20px; 
+    .product-detail .auction-top .bidder {
+        font-size: 14px;
+        line-height: 20px;
     }
-    .product-detail .auction-middle .ending { 
-        margin-bottom: 8px; 
+    .product-detail .auction-middle .ending {
+        margin-bottom: 8px;
     }
-    .placebid-modal-wrapper .modal-dialog { 
-        max-width: 100%; 
+    .placebid-modal-wrapper .modal-dialog {
+        max-width: 100%;
         margin: 0 15px;
     }
-    .placebid-modal-wrapper .modal-content { 
-        padding: 20px; 
+    .placebid-modal-wrapper .modal-content {
+        padding: 20px;
     }
-    .placebid-modal-wrapper .modal-header h3 { 
-        font-size: 24px; 
-        line-height: 30px; 
+    .placebid-modal-wrapper .modal-header h3 {
+        font-size: 24px;
+        line-height: 30px;
     }
-    .placebid-modal-wrapper .modal-header { 
-        margin-bottom: 10px; 
+    .placebid-modal-wrapper .modal-header {
+        margin-bottom: 10px;
     }
-    .placebid-modal-wrapper p { 
-        padding: 0 15px; 
+    .placebid-modal-wrapper p {
+        padding: 0 15px;
     }
     .placebid-modal-wrapper .modal-body .placebid-form-box .bid-content .bid-content-top .bid-content-left input {
-         font-size: 14px; 
-         height: 45px; 
-         line-height: 45px; 
+         font-size: 14px;
+         height: 45px;
+         line-height: 45px;
     }
-    .placebid-modal-wrapper .modal-body .placebid-form-box .bid-content .bid-content-top .bid-content-left span { 
-        font-size: 14px; 
+    .placebid-modal-wrapper .modal-body .placebid-form-box .bid-content .bid-content-top .bid-content-left span {
+        font-size: 14px;
     }
-    .placebid-modal-wrapper .bid-content-mid span { 
-        font-size: 14px; 
-        line-height: 18px; 
+    .placebid-modal-wrapper .bid-content-mid span {
+        font-size: 14px;
+        line-height: 18px;
     }
     .placebid-modal-wrapper .bit-continue-button a, .placebid-modal-wrapper .bit-continue-button .cancel {
-        font-size: 14px; 
-        line-height: 14px; 
+        font-size: 14px;
+        line-height: 14px;
     }
 
-    .product-section .filter-list .circle { 
-        bottom: 125px; right: 5px; width: 45px; 
+    .product-section .filter-list .circle {
+        bottom: 125px; right: 5px; width: 45px;
     }
-    .product-section .filter-list .btn {  
-        padding: 12px 20px; 
-        font-size: 12px; 
-        line-height: 12px; 
+    .product-section .filter-list .btn {
+        padding: 12px 20px;
+        font-size: 12px;
+        line-height: 12px;
     }
-    .product-section .heading { 
-        margin-bottom: 20px; 
+    .product-section .heading {
+        margin-bottom: 20px;
     }
-    .product-section .filter-list { 
-        margin-bottom: 25px; 
+    .product-section .filter-list {
+        margin-bottom: 25px;
     }
-    .nft-section .create-nft-box { 
-        padding: 30px 20px; 
+    .nft-section .create-nft-box {
+        padding: 30px 20px;
     }
     .nft-section .create-nft-box .form-group {
-        width: 100%; 
-        margin: 0 0 20px 0; 
+        width: 100%;
+        margin: 0 0 20px 0;
     }
-    .nft-section .create-nft-box .form-group select { 
-        background-position: 93.5% 19px !important; 
+    .nft-section .create-nft-box .form-group select {
+        background-position: 93.5% 19px !important;
     }
-    .nft-section .create-nft-box .special { 
-        width: 100% !important; 
+    .nft-section .create-nft-box .special {
+        width: 100% !important;
     }
-    .nft-section .create-nft-box .form-group .form-control { 
-        height: 46px; 
-        line-height: 46px; 
+    .nft-section .create-nft-box .form-group .form-control {
+        height: 46px;
+        line-height: 46px;
     }
-    .nft-section .create-nft-box .form-check { 
-        padding-top: 0px; 
-        padding-bottom: 20px; 
-        padding-left: 20px; 
+    .nft-section .create-nft-box .form-check {
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 20px;
     }
-    .nft-section .create-nft-box .form-check input { 
-        width: 16px; 
-        height: 16px; 
-        line-height: 16px; 
+    .nft-section .create-nft-box .form-check input {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
     }
-    .nft-section .create-nft-box .form-check label { 
-        font-size: 14px; 
-        line-height: 14px; 
-        margin-left: 5px; 
+    .nft-section .create-nft-box .form-check label {
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 5px;
     }
-    .nft-section .create-nft-box .btn { 
-        font-size: 14px; 
-        line-height: 14px; 
-        padding: 14px 30px; 
-        width: 100%; 
-        margin: 0 auto; 
+    .nft-section .create-nft-box .btn {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 14px 30px;
+        width: 100%;
+        margin: 0 auto;
     }
-    .nft-section .preview-box-middle { 
-        padding-bottom: 20px; 
-        margin-bottom: 20px; 
+    .nft-section .preview-box-middle {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
-    .nft-section .preview-box-top i { 
-        font-size: 18px; 
-        line-height: 24px; 
+    .nft-section .preview-box-top i {
+        font-size: 18px;
+        line-height: 24px;
     }
-    .nft-section .preview-box a { 
-        font-size: 14px; 
-        line-height: 14px; 
-        padding: 14px 20px; 
+    .nft-section .preview-box a {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 14px 20px;
     }
-    .checkout-section .preview-box .btn-outer .btn { 
-        font-size: 14px; 
-        line-height: 14px; 
-        padding: 14px 20px; 
+    .checkout-section .preview-box .btn-outer .btn {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 14px 20px;
     }
     #search input[type="search"] {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
-    .cart-section .product .product-image img { 
-        width: 65px; 
+    .cart-section .product .product-image img {
+        width: 65px;
     }
-    .cart-section .product-removal { 
-        float: right; 
+    .cart-section .product-removal {
+        float: right;
     }
-    .cart-section .product-line-price { 
-        float: right; 
-        clear: left; 
-        width: auto; 
-        margin-top: 10px; 
-        font-size: 14px; 
+    .cart-section .product-line-price {
+        float: right;
+        clear: left;
+        width: auto;
+        margin-top: 10px;
+        font-size: 14px;
     }
-    .cart-section .product .product-line-price:before { 
-        content: 'Item Total:'; 
-        font-size: 14px; 
+    .cart-section .product .product-line-price:before {
+        content: 'Item Total:';
+        font-size: 14px;
     }
-    .cart-section .totals .totals-item label { 
-        width: 60%; 
+    .cart-section .totals .totals-item label {
+        width: 60%;
     }
-    .cart-section .totals .totals-item .totals-value { 
-        width: 40%; 
+    .cart-section .totals .totals-item .totals-value {
+        width: 40%;
     }
-    .cart-section .product-price { 
-        font-size: 14px; 
+    .cart-section .product-price {
+        font-size: 14px;
     }
 }

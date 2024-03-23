@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Voli;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -13,7 +14,11 @@ class VoliController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $volis = Voli::all();
+        $volis = Voli::all()->map(function ($voli) {
+
+            $voli->formatted_tanggal = Carbon::parse($voli->created_at)->format('d-m-Y');
+            return $voli;
+        });
         return view('admin.voli.voli', [
             'volis' => $volis,
             'user' => $user

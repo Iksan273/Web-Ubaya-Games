@@ -27,6 +27,7 @@
                                 <th class="text-white">Fakultas</th>
                                 <th class="text-white">File Pendaftaran</th>
                                 <th class="text-white">Actions</th>
+                                <th class="text-white">Tanggal Daftar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -56,6 +57,7 @@
                                         <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
                                             data-bs-target="#deleteModal{{ $data->id }}">Delete</button>
                                     </td>
+                                    <td>{{ $data->formatted_tanggal}}</td>
                                 </tr>
                                  <!-- Modal Delete -->
                             <div class="modal fade" id="deleteModal{{ $data->id }}" tabindex="-1" aria-labelledby="deleteModalLabel"

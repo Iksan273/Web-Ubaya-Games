@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Esport;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -12,7 +13,10 @@ class EsportController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $esport = Esport::all();
+        $esport = Esport::all()->map(function($data){
+            $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
+            return $data;
+        });
         return view('admin.esport.esport', [
             'esport' => $esport,
             'user' => $user

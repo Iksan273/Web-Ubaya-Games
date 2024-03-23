@@ -58,7 +58,9 @@ Route::post('/register/dance', [DanceController::class, 'store'])->name('registe
 Route::view('/formEsport', 'esport.register')->name('esport.form');
 Route::post('/register/esport', [EsportController::class, 'store'])->name('register.esport');
 
-
+Route::get('/peraturan', function () {
+    return view('peraturan');
+})->name('peraturan');
 
 //halaman admin dan view admin routing//
 Route::middleware(['auth'])->group(function () {
@@ -104,4 +106,4 @@ Route::middleware(['auth'])->group(function () {
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
