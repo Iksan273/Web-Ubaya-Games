@@ -35,27 +35,27 @@ Route::post('/register/voli', [VoliController::class, 'store'])->name('register.
 
 // badminton for user//
 
-Route::view('/formBadminton', 'badminton.register')->name('badminton.form');
+Route::view('/formBadminton', 'Badminton.register')->name('badminton.form');
 Route::post('/register/badminton', [BadmintonController::class, 'store'])->name('register.badminton');
 
 // basket for user//
 
-Route::view('/formBasket', 'basket.register')->name('basket.form');
+Route::view('/formBasket', 'Basket.register')->name('basket.form');
 Route::post('/register/basket', [BasketController::class, 'store'])->name('register.basket');
 
 // Futsal for user//
 
-Route::view('/formFutsal', 'futsal.register')->name('futsal.form');
+Route::view('/formFutsal', 'Futsal.register')->name('futsal.form');
 Route::post('/register/futsal', [FutsalController::class, 'store'])->name('register.futsal');
 
 // Dance for user//
 
-Route::view('/formDance', 'dance.register')->name('dance.form');
+Route::view('/formDance', 'Dance.register')->name('dance.form');
 Route::post('/register/dance', [DanceController::class, 'store'])->name('register.dance');
 
 // Esport for user//
 
-Route::view('/formEsport', 'esport.register')->name('esport.form');
+Route::view('/formEsport', 'Esport.register')->name('esport.form');
 Route::post('/register/esport', [EsportController::class, 'store'])->name('register.esport');
 
 Route::get('/peraturan', function () {
