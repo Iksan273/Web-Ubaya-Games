@@ -39,7 +39,7 @@
                                     <td>{{ $data->nama_kontingen }}</td>
                                     <td>{{ $data->fakultas }}</td>
                                     <td>
-                                        <a href="{{ asset('basket/files/' . $data->file) }}">Open the pdf!</a>
+                                       <button type="button" class="btn btn-success"> <a href="{{ asset('basket/files/' . $data->file) }}">View</a></button>
 
 
                                         &nbsp; <!-- Menambahkan spasi antara tombol -->
