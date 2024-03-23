@@ -39,12 +39,8 @@
                                     <td>{{ $data->nama_kontingen }}</td>
                                     <td>{{ $data->fakultas }}</td>
                                     <td>
-                                        <button type="button" class="btn btn-success" onclick="showPDF()">View
-                                            File</button>
-                                        <div id="pdfViewer" style="display:none;">
-                                            <iframe src="{{ asset('basket/files/' . $data->file) }}"
-                                                style="width:100%; height:500px;" frameborder="0"></iframe>
-                                        </div>
+                                        <a href="{{ asset('basket/files/' . $data->file) }}">Open the pdf!</a>
+
 
                                         &nbsp; <!-- Menambahkan spasi antara tombol -->
                                         <a href="{{ asset('basket/files/' . $data->file) }}" download="{{ $data->file }}">
