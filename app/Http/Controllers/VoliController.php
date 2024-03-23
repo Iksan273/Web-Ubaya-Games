@@ -79,42 +79,27 @@ class VoliController extends Controller
     }
 
     public function update(Request $request, $id)
-    {
-        // $validator = Validator::make($request->all(), [
-        //     'nama_kontingen' => 'required',
-        //     'fakultas' => 'required',
-        //     'file' => 'sometimes|file|mimes:pdf,doc,docx|max:2048',
-        // ]);
+{
+    try {
+        $voli = Voli::findOrFail($id);
 
-        // if ($validator->fails()) {
-        //     return redirect()->back()
-        //         ->withErrors($validator)
-        //         ->withInput();
-        // }
+        $updateData = [
+            'nama_kontingen' => $request->nama_kontingen,
+            'fakultas' => $request->fakultas,
+            'status' => $request->status,
+            'revisi' => $request->revisi,
+        ];
 
-        try {
-            $voli = Voli::findOrFail($id);
 
-            $updateData = [
-                'nama_kontingen' => $request->nama_kontingen,
-                'fakultas' => $request->fakultas,
-            ];
 
-            // Hanya update file jika ada file baru yang diunggah
-            if ($request->hasFile('file')) {
-                $file = $request->file('file');
-                $filename = time() . '_' . $file->getClientOriginalName();
-                $file->move(public_path('voli/files'), $filename);
-                $updateData['file'] = $filename;
-            }
+        $voli->update($updateData);
 
-            $voli->update($updateData);
-
-            return redirect()->route('admin.voli')->with('success', 'Data berhasil diupdate!');
-        } catch (\Exception $e) {
-            return redirect()->route('admin.voli')->with('error', 'Terjadi kesalahan saat mengupdate data.');
-        }
+        return redirect()->route('admin.voli')->with('success', 'Data berhasil diupdate!');
+    } catch (Exception $e) {
+        return redirect()->back()->with('error', 'Terjadi kesalahan saat mengupdate data.');
     }
+}
+
 
 
     public function delete($id)

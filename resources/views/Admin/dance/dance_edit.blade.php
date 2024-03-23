@@ -12,15 +12,31 @@
         </div>
     @endif
     @if (session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif
-@if (session('error'))
-    <div class="alert alert-danger">
-        {{ session('error') }}
-    </div>
-@endif
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
+    <style>
+        .status-pending {
+            background-color: blue;
+            color: white;
+        }
+
+        .status-accepted {
+            background-color: green;
+            color: white;
+        }
+
+        .status-rejected {
+            background-color: red;
+            color: white;
+        }
+    </style>
     <div class="card">
         <div class="card-body">
             <div class="container-fluid">
@@ -43,26 +59,22 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="inputCompany" class="col-sm-2 col-form-label">File saat ini</label>
-                        <div class="col-sm-10">
-                            @if ($dance->file)
-                                <p>{{ $dance->file }}</p>
-
-                                <a href="{{ asset('dance/files/' . $dance->file) }}" target="_blank">Download/View current
-                                    file</a>
-                            @else
-                                <p>No file uploaded.</p>
-                            @endif
+                        <label for="status" class="col-sm-2 col-form-label">Status</label>
+                        <div class="col-sm-2">
+                            <select class="form-control" id="status" name="status">
+                                <option value="pending" style="background-color: blue;">Pending</option>
+                                <option value="accepted" style="background-color: green;">Accepted</option>
+                                <option value="rejected" style="background-color: red;">Rejected</option>
+                            </select>
                         </div>
                     </div>
-
                     <div class="row mb-3">
-                        <label for="file" class="col-sm-2 col-form-label">Upload File Baru</label>
+                        <label for="revisi" class="col-sm-2 col-form-label">Revisi</label>
                         <div class="col-sm-10">
-                            <input type="file" class="form-control-file" id="file" name="file">
-                            <small>Jika ingin mengganti file, silahkan upload file baru.</small>
+                            <textarea class="form-control" id="revisi" name="revisi" rows="3">{{ $dance->revisi }}</textarea>
                         </div>
                     </div>
+
 
 
                     <button type="submit" class="btn btn-primary">Update</button>
@@ -71,4 +83,26 @@
 
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var statusSelect = document.getElementById('status');
+            var initialClass = 'form-control ';
+
+            function updateStatusColor() {
+                statusSelect.className = initialClass; // Reset to default
+                if (statusSelect.value === 'pending') {
+                    statusSelect.classList.add('status-pending');
+                } else if (statusSelect.value === 'accepted') {
+                    statusSelect.classList.add('status-accepted');
+                } else if (statusSelect.value === 'rejected') {
+                    statusSelect.classList.add('status-rejected');
+                }
+            }
+
+            statusSelect.addEventListener('change', updateStatusColor);
+
+            updateStatusColor();
+        });
+    </script>
+
 @endsection

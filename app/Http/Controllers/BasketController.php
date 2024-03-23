@@ -86,20 +86,15 @@ class BasketController extends Controller
             $updateData = [
                 'nama_kontingen' => $request->nama_kontingen,
                 'fakultas' => $request->fakultas,
+                'status' => $request->status,
+                'revisi' => $request->revisi,
             ];
 
-            // Hanya update file jika ada file baru yang diunggah
-            if ($request->hasFile('file')) {
-                $file = $request->file('file');
-                $filename = time() . '_' . $file->getClientOriginalName();
-                $file->move(public_path('basket/files'), $filename);
-                $updateData['file'] = $filename;
-            }
 
             $basket->update($updateData);
 
             return redirect()->route('admin.basket')->with('success', 'Data berhasil diupdate!');
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             return redirect()->route('admin.basket')->with('error', 'Terjadi kesalahan saat mengupdate data.');
         }
     }

@@ -16,8 +16,8 @@ class BadmintonController extends Controller
     {
         $user = Auth::user();
         $badminton = Badminton::all();
-        $badminton = Badminton::all()->map(function($data){
-            $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
+        $badminton = Badminton::all()->map(function ($data) {
+            $data->formatted_tanggal = Carbon::parse($data->created_at)->format('d-m-Y');
             return $data;
         });
         return view('admin.badminton.badminton', [
@@ -80,43 +80,26 @@ class BadmintonController extends Controller
     }
 
     public function update(Request $request, $id)
-{
-    $request->validate([
-        'nama_kontingen' => 'required',
-        'fakultas' => 'required',
-        'file' => 'sometimes|nullable|file|mimes:pdf|max:20480',
-    ]);
-
-    try {
-        $badminton = Badminton::findOrFail($id);
-
-        $updateData = [
-            'nama_kontingen' => $request->nama_kontingen,
-            'fakultas' => $request->fakultas,
-        ];
-
-        if ($request->hasFile('file')) {
-            // Hapus file lama jika ada
-            $oldFile = $badminton->file;
-            if ($oldFile && file_exists(public_path('badminton/files/' . $oldFile))) {
-                unlink(public_path('badminton/files/' . $oldFile));
-            }
+    {
 
 
-            $file = $request->file('file');
-            $filename = time() . '_' . $file->getClientOriginalName();
-            $file->move(public_path('badminton/files'), $filename);
-            $updateData['file'] = $filename;
+        try {
+            $badminton = Badminton::findOrFail($id);
+
+            $updateData = [
+                'nama_kontingen' => $request->nama_kontingen,
+                'fakultas' => $request->fakultas,
+                'status' => $request->status,
+                'revisi' => $request->revisi,
+            ];
+
+            $badminton->update($updateData);
+
+            return redirect()->route('admin.badminton')->with('success', 'Data berhasil diupdate!');
+        } catch (Exception $e) {
+            return redirect()->route('admin.badminton')->with('error', 'Terjadi kesalahan saat mengupdate data: ' . $e->getMessage());
         }
-
-
-        $badminton->update($updateData);
-
-        return redirect()->route('admin.badminton')->with('success', 'Data berhasil diupdate!');
-    } catch (Exception $e) {
-        return redirect()->route('admin.badminton')->with('error', 'Terjadi kesalahan saat mengupdate data: ' . $e->getMessage());
     }
-}
 
 
 

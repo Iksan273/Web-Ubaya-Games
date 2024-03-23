@@ -13,5 +13,12 @@ class Futsal extends Model
         'nama_kontingen',
         'fakultas',
         'file',
+        'status',
+        'revisi',
+    ];
+
+    protected $attributes = [
+        'status' => 'pending',
+        'revisi' => '-',
     ];
 }

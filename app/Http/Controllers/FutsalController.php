@@ -8,13 +8,14 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
+
 class FutsalController extends Controller
 {
     public function index()
     {
         $user = Auth::user();
-        $futsal = Futsal::all()->map(function($data){
-            $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
+        $futsal = Futsal::all()->map(function ($data) {
+            $data->formatted_tanggal = Carbon::parse($data->created_at)->format('d-m-Y');
             return $data;
         });
         return view('admin.futsal.futsal', [
@@ -85,15 +86,12 @@ class FutsalController extends Controller
             $updateData = [
                 'nama_kontingen' => $request->nama_kontingen,
                 'fakultas' => $request->fakultas,
+                'status' => $request->status,
+                'revisi' => $request->revisi,
+
             ];
 
-            // Hanya update file jika ada file baru yang diunggah
-            if ($request->hasFile('file')) {
-                $file = $request->file('file');
-                $filename = time() . '_' . $file->getClientOriginalName();
-                $file->move(public_path('futsal/files'), $filename);
-                $updateData['file'] = $filename;
-            }
+
 
             $futsal->update($updateData);
 

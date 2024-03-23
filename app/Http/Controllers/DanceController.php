@@ -79,17 +79,6 @@ class DanceController extends Controller
 
     public function update(Request $request, $id)
     {
-        // $validator = Validator::make($request->all(), [
-        //     'nama_kontingen' => 'required',
-        //     'fakultas' => 'required',
-        //     'file' => 'sometimes|file|mimes:pdf,doc,docx|max:2048',
-        // ]);
-
-        // if ($validator->fails()) {
-        //     return redirect()->back()
-        //         ->withErrors($validator)
-        //         ->withInput();
-        // }
 
         try {
             $dance = Dance::findOrFail($id);
@@ -97,15 +86,11 @@ class DanceController extends Controller
             $updateData = [
                 'nama_kontingen' => $request->nama_kontingen,
                 'fakultas' => $request->fakultas,
+                'status' => $request->status,
+                'revisi' => $request->revisi,
             ];
 
-            // Hanya update file jika ada file baru yang diunggah
-            if ($request->hasFile('file')) {
-                $file = $request->file('file');
-                $filename = time() . '_' . $file->getClientOriginalName();
-                $file->move(public_path('dance/files'), $filename);
-                $updateData['file'] = $filename;
-            }
+
 
             $dance->update($updateData);
 
