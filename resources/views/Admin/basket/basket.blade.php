@@ -39,8 +39,11 @@
                                     <td>{{ $data->nama_kontingen }}</td>
                                     <td>{{ $data->fakultas }}</td>
                                     <td>
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="{{ asset('basket/files/' . $data->file) }}" allowfullscreen></iframe>
+                                        <button type="button" class="btn btn-success" onclick="showPDF()">View
+                                            File</button>
+                                        <div id="pdfViewer" style="display:none;">
+                                            <iframe src="{{ asset('basket/files/' . $data->file) }}"
+                                                style="width:100%; height:500px;" frameborder="0"></iframe>
                                         </div>
 
                                         &nbsp; <!-- Menambahkan spasi antara tombol -->
@@ -57,7 +60,8 @@
                                             data-bs-target="#deleteModal{{ $data->id }}">Delete</button>
                                     </td>
                                     <td>
-                                        <span class="badge {{ $data->status == 'pending' ? 'bg-primary' : ($data->status == 'accepted' ? 'bg-success' : 'bg-danger') }}">
+                                        <span
+                                            class="badge {{ $data->status == 'pending' ? 'bg-primary' : ($data->status == 'accepted' ? 'bg-success' : 'bg-danger') }}">
                                             {{ ucfirst($data->status) }}
                                         </span>
                                     </td>
@@ -99,4 +103,15 @@
             </div>
         </div>
     </div>
+    <script>
+        function showPDF() {
+            var pdfViewer = document.getElementById('pdfViewer');
+            if (pdfViewer.style.display === "none") {
+                pdfViewer.style.display = "block";
+            } else {
+                pdfViewer.style.display = "none"; // Opsional: Tambahkan ini jika Anda ingin tombol juga menyembunyikan <iframe> saat ditekan lagi
+            }
+        }
+        </script>
+
 @endsection
