@@ -19,7 +19,7 @@ class VoliController extends Controller
             $voli->formatted_tanggal = Carbon::parse($voli->created_at)->format('d-m-Y');
             return $voli;
         });
-        return view('admin.voli.voli', [
+        return view('Admin.voli.voli', [
             'volis' => $volis,
             'user' => $user
         ]);
@@ -29,7 +29,7 @@ class VoliController extends Controller
 
         $user = Auth::user();
         $voli = Voli::findOrFail($id);
-        return view('admin.voli.voli_edit', [
+        return view('Admin.voli.voli_edit', [
             'user' => $user,
             'voli' => $voli
         ]);
@@ -40,7 +40,7 @@ class VoliController extends Controller
         $rules = [
             'nama_kontingen' => 'required|string|max:255',
             'fakultas' => 'required|string|max:255',
-            'file' => 'required|file|mimes:pdf|max:20480',
+            'file' => 'required|file|mimes:pdf|max:100480',
         ];
 
         $messages = [

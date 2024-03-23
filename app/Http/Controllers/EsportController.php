@@ -17,7 +17,7 @@ class EsportController extends Controller
             $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
             return $data;
         });
-        return view('admin.esport.esport', [
+        return view('Admin.esport.esport', [
             'esport' => $esport,
             'user' => $user
         ]);
@@ -27,7 +27,7 @@ class EsportController extends Controller
 
         $user = Auth::user();
         $esport = Esport::findOrFail($id);
-        return view('admin.esport.esport_edit', [
+        return view('Admin.esport.esport_edit', [
             'user' => $user,
             'esport' => $esport
         ]);
@@ -38,7 +38,7 @@ class EsportController extends Controller
         $rules = [
             'nama_kontingen' => 'required|string|max:255',
             'fakultas' => 'required|string|max:255',
-            'file' => 'required|file|mimes:pdf|max:20480',
+            'file' => 'required|file|mimes:pdf|max:100480',
         ];
 
         $messages = [

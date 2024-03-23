@@ -18,7 +18,7 @@ class DanceController extends Controller
             $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
             return $data;
         });
-        return view('admin.dance.dance', [
+        return view('Admin.dance.dance', [
             'dance' => $dance,
             'user' => $user
         ]);
@@ -28,7 +28,7 @@ class DanceController extends Controller
 
         $user = Auth::user();
         $dance = Dance::findOrFail($id);
-        return view('admin.dance.dance_edit', [
+        return view('Admin.dance.dance_edit', [
             'user' => $user,
             'dance' => $dance
         ]);
@@ -39,7 +39,7 @@ class DanceController extends Controller
         $rules = [
             'nama_kontingen' => 'required|string|max:255',
             'fakultas' => 'required|string|max:255',
-            'file' => 'required|file|mimes:pdf|max:20480',
+            'file' => 'required|file|mimes:pdf|max:100480',
         ];
 
         $messages = [

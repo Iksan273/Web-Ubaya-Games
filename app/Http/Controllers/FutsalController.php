@@ -18,7 +18,7 @@ class FutsalController extends Controller
             $data->formatted_tanggal = Carbon::parse($data->created_at)->format('d-m-Y');
             return $data;
         });
-        return view('admin.futsal.futsal', [
+        return view('Admin.futsal.futsal', [
             'futsal' => $futsal,
             'user' => $user
         ]);
@@ -28,7 +28,7 @@ class FutsalController extends Controller
 
         $user = Auth::user();
         $futsal = Futsal::findOrFail($id);
-        return view('admin.futsal.futsal_edit', [
+        return view('Admin.futsal.futsal_edit', [
             'user' => $user,
             'futsal' => $futsal
         ]);
@@ -39,7 +39,7 @@ class FutsalController extends Controller
         $rules = [
             'nama_kontingen' => 'required|string|max:255',
             'fakultas' => 'required|string|max:255',
-            'file' => 'required|file|mimes:pdf|max:20480',
+            'file' => 'required|file|mimes:pdf|max:100480',
         ];
 
         $messages = [

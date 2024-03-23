@@ -19,7 +19,7 @@ class BasketController extends Controller
             $data->formatted_tanggal=Carbon::parse($data->created_at)->format('d-m-Y');
             return $data;
         });
-        return view('admin.basket.basket', [
+        return view('Admin.basket.basket', [
             'basket' => $basket,
             'user' => $user
         ]);
@@ -29,7 +29,7 @@ class BasketController extends Controller
 
         $user = Auth::user();
         $basket = Basket::findOrFail($id);
-        return view('admin.basket.basket_edit', [
+        return view('Admin.basket.basket_edit', [
             'user' => $user,
             'basket' => $basket
         ]);
@@ -40,7 +40,7 @@ class BasketController extends Controller
         $rules = [
             'nama_kontingen' => 'required|string|max:255',
             'fakultas' => 'required|string|max:255',
-            'file' => 'required|file|mimes:pdf|max:20480',
+            'file' => 'required|file|mimes:pdf|max:100480',
         ];
 
         $messages = [

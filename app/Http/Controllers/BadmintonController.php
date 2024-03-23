@@ -20,7 +20,7 @@ class BadmintonController extends Controller
             $data->formatted_tanggal = Carbon::parse($data->created_at)->format('d-m-Y');
             return $data;
         });
-        return view('admin.badminton.badminton', [
+        return view('Admin.badminton.badminton', [
             'badminton' => $badminton,
             'user' => $user
         ]);
@@ -30,7 +30,7 @@ class BadmintonController extends Controller
 
         $user = Auth::user();
         $badminton = Badminton::findOrFail($id);
-        return view('admin.badminton.badminton_edit', [
+        return view('Admin.badminton.badminton_edit', [
             'user' => $user,
             'badminton' => $badminton
         ]);
@@ -41,7 +41,7 @@ class BadmintonController extends Controller
         $rules = [
             'nama_kontingen' => 'required|string|max:255',
             'fakultas' => 'required|string|max:255',
-            'file' => 'required|file|mimes:pdf|max:20480',
+            'file' => 'required|file|mimes:pdf|max:100480',
         ];
 
         $messages = [
