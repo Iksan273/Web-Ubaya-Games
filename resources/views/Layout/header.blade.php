@@ -47,6 +47,9 @@
                                 <li class="nav-item">
                                     <a class="dropdown-item nav-link" href="{{ route('esport.form') }}">ESPORT</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item nav-link" href="{{ url('/status-pendaftaran') }}">Status Pendaftaran</a>
+                                </li>
 
                             </ul>
                         </div>
