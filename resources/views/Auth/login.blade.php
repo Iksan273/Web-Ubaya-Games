@@ -55,8 +55,8 @@
             <div class="logo">
                 <a href="{{ url('/') }}">UBAYA GAMES</a>
             </div>
-            <p class="auth-description">Silahkan Login<br>Don't have an account? <a href="{{ route('register') }}">Sign
-                    Up</a></p>
+            {{-- <p class="auth-description">Silahkan Login<br>Don't have an account? <a href="{{ route('register') }}">Sign
+                    Up</a></p> --}}
 
             <form method="POST" action="{{ route('login') }}" class="auth-credentials m-b-xxl">
                 @csrf
