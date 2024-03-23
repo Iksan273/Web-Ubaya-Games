@@ -105,7 +105,7 @@
                             <div class="carts_wrapper">
                                 <span class="rating counter">6</span>
 
-                                <span class="profession">Cabang Olahraga</span>
+                                <span class="profession">Cabang</span>
                             </div>
                         </li>
                         <li class="second">
@@ -123,7 +123,7 @@
                             <div class="carts_wrapper">
                                 <span class="rating counter">9</span>
 
-                                <span class="profession">Fakultas</span>
+                                <span class="profession">Fakultas dan Politeknik</span>
                             </div>
                         </li>
                     </ul>
