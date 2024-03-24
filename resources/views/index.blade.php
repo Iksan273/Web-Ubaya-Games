@@ -167,8 +167,10 @@
                         </span>
 
                         <h3>Basket</h3>
-                        <p class="sub_p">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do eiusmod tempor
-                            incididunt utlabo.</p>
+
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga basket, silakan hubungi koordinator cabang kami:</p>
+                        <p><strong>Koordinator: </strong>William Wibowo</p>
+                        <p><strong>ID Line: </strong><span >wibowo.william</span></p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -177,8 +179,9 @@
                             sports_esports
                         </span>
                         <h3>Esport</h3>
-                        <p class="sub_p">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do eiusmod tempor
-                            incididunt utlabo.</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Esport, silakan hubungi koordinator cabang kami:</p>
+                        <p><strong>Koordinator: </strong>Donny yung</p>
+                        <p><strong>ID Line: </strong><span >donnyung2</span></p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -187,8 +190,9 @@
                             sports_soccer
                         </span>
                         <h3>Futsal</h3>
-                        <p class="sub_p">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do eiusmod tempor
-                            incididunt utlabo.</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Futsal, silakan hubungi koordinator cabang kami:</p>
+                        <p><strong>Koordinator: </strong>Christoper Jeremia</p>
+                        <p><strong>Phone: </strong><span > 087863890064 </span></p>
                     </div>
                 </div>
             </div>
@@ -201,8 +205,9 @@
                         </span>
 
                         <h3>Badminton</h3>
-                        <p class="sub_p">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do eiusmod tempor
-                            incididunt utlabo.</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Badminton, silakan hubungi koordinator cabang kami:</p>
+                        <p><strong>Koordinator: </strong>Yehezkiel</p>
+                        <p><strong>ID Line: </strong><span >yehezkieldharmaputra</span></p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -211,8 +216,9 @@
                             music_note
                         </span>
                         <h3>Dance</h3>
-                        <p class="sub_p">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do eiusmod tempor
-                            incididunt utlabo.</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Dance, silakan hubungi koordinator cabang kami:</p>
+                        <p><strong>Koordinator: </strong>Egidius Banarevo</p>
+                        <p><strong>ID Line: </strong><span >egidiusbanarevo06</span></p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -221,8 +227,9 @@
                             sports_volleyball
                         </span>
                         <h3>Voli</h3>
-                        <p class="sub_p">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do eiusmod tempor
-                            incididunt utlabo.</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Voli, silakan hubungi koordinator cabang kami:</p>
+                        <p><strong>Koordinator: </strong>Trenadi Pramudia</p>
+                        <p><strong>ID Line: </strong><span >wineren</span></p>
                     </div>
                 </div>
             </div>
