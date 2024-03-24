@@ -6,9 +6,20 @@
 @section('content')
 @section('content')
 <div class="container mt-5">
+    <div class="rules-section text-white" style="background-color: rgba(245, 204, 131, 0.5); padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+        <h2>Informasi Pendaftaran UBAYA GAMES 2024</h2>
+        <p style="font-size: 20px;">Akan terdapat 3 status pengiriman berkas pendaftaran:</p>
+        <ul style="font-size: 20px;">
+            <li><span class="badge" style="background-color: blue;">Pending</span> - berkas masih dalam proses pengecekan.</li>
+            <li><span class="badge" style="background-color: green;">Success</span> - berkas berhasil dan sudah diterima oleh panitia.</li>
+            <li><span class="badge" style="background-color: red;">Rejected</span> - berkas ditolak, dan kontingen wajib mengirimkan ulang berkas yang benar sesuai dengan arahan revisi dari panitia.</li>
+        </ul>
+        <p style="font-size: 20px;" class="text-justify">Peserta yang telah menerima status <span class="badge" style="background-color: green;">Success</span> pada berkas yang dikumpulkan, akan diundang ke grup masing-masing cabang olahraga yang didaftar.</p>
+    </div>
+
 
     <!-- Tabel Voli -->
-    <div class="card mb-5">
+    <div class="card mb-5 mt-5">
         <div class="card-body">
             <h2 class="text-center mb-3 text-dark">Cabang Voli</h2>
             <div class="table-responsive">
