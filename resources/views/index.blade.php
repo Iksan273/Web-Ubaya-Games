@@ -61,7 +61,8 @@
                                             <a class="dropdown-item nav-link" href="{{ route('seni.form') }}">SENI</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="{{ url('/status-pendaftaran') }}">Status Pendaftaran</a>
+                                            <a class="dropdown-item nav-link"
+                                                href="{{ url('/status-pendaftaran') }}">Status Pendaftaran</a>
                                         </li>
 
                                     </ul>
@@ -171,9 +172,10 @@
 
                         <h3>Basket</h3>
 
-                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga basket, silakan hubungi koordinator cabang kami:</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga basket, silakan hubungi
+                            koordinator cabang kami:</p>
                         <p><strong>Koordinator: </strong>William Wibowo</p>
-                        <p><strong>ID Line: </strong><span >wibowo.william</span></p>
+                        <p><strong>ID Line: </strong><span>wibowo.william</span></p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -182,9 +184,10 @@
                             sports_esports
                         </span>
                         <h3>Esport</h3>
-                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Esport, silakan hubungi koordinator cabang kami:</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Esport, silakan hubungi
+                            koordinator cabang kami:</p>
                         <p><strong>Koordinator: </strong>Donny yung</p>
-                        <p><strong>ID Line: </strong><span >donnyung2</span></p>
+                        <p><strong>ID Line: </strong><span>donnyung2</span></p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -193,9 +196,10 @@
                             sports_soccer
                         </span>
                         <h3>Futsal</h3>
-                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Futsal, silakan hubungi koordinator cabang kami:</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Futsal, silakan hubungi
+                            koordinator cabang kami:</p>
                         <p><strong>Koordinator: </strong>Christoper Jeremia</p>
-                        <p><strong>Phone: </strong><span > 087863890064 </span></p>
+                        <p><strong>Phone: </strong><span> 087863890064 </span></p>
                     </div>
                 </div>
             </div>
@@ -208,9 +212,10 @@
                         </span>
 
                         <h3>Badminton</h3>
-                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Badminton, silakan hubungi koordinator cabang kami:</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Badminton, silakan hubungi
+                            koordinator cabang kami:</p>
                         <p><strong>Koordinator: </strong>Yehezkiel</p>
-                        <p><strong>ID Line: </strong><span >yehezkieldharmaputra</span></p>
+                        <p><strong>ID Line: </strong><span>yehezkieldharmaputra</span></p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -219,9 +224,10 @@
                             music_note
                         </span>
                         <h3>Dance</h3>
-                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Dance, silakan hubungi koordinator cabang kami:</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Dance, silakan hubungi
+                            koordinator cabang kami:</p>
                         <p><strong>Koordinator: </strong>Egidius Banarevo</p>
-                        <p><strong>ID Line: </strong><span >egidiusbanarevo06</span></p>
+                        <p><strong>ID Line: </strong><span>egidiusbanarevo06</span></p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -230,9 +236,10 @@
                             sports_volleyball
                         </span>
                         <h3>Voli</h3>
-                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Voli, silakan hubungi koordinator cabang kami:</p>
+                        <p class="sub_p">Untuk informasi lebih lanjut mengenai cabang olahraga Voli, silakan hubungi
+                            koordinator cabang kami:</p>
                         <p><strong>Koordinator: </strong>Trenadi Pramudia</p>
-                        <p><strong>ID Line: </strong><span >wineren</span></p>
+                        <p><strong>ID Line: </strong><span>wineren</span></p>
                     </div>
                 </div>
             </div>
@@ -245,9 +252,10 @@
                         </span>
 
                         <h3>Seni</h3>
-                        <p class="sub_p">Cabang seni terdiri dari menulis cerpen, fotografi, komik strip, seni lukis, desain poster, Untuk informasi lebih lanjut silakan hubungi koordinator cabang kami:</p>
+                        <p class="sub_p">Cabang seni terdiri dari menulis cerpen, fotografi, komik strip, seni lukis,
+                            desain poster, Untuk informasi lebih lanjut silakan hubungi koordinator cabang kami:</p>
                         <p><strong>Koordinator: </strong>Kezia</p>
-                        <p><strong>ID Line: </strong><span >keziajessicaa_</span></p>
+                        <p><strong>ID Line: </strong><span>keziajessicaa_</span></p>
                     </div>
                 </div>
             </div>
@@ -255,6 +263,26 @@
 
         </div>
     </section>
+    {{-- Contact Kontingen --}}
+    <section class="create-sell_nft_section">
+        <div class="container">
+            <div class="row mb-10">
+                <div class="col-lg-12">
+                    <div class="create_sell-content">
+                        <h2 class="mb-4" data-aos="fade-down"> Kontak Kontingen <span> Fakultas </span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="image-container">
+                        <img src="{{ asset('assetUser/images/UG/kontak.png') }}" alt="Image" class="responsive-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- MARKET PLACE SECTION -->
     <section class="market-place_section">
@@ -385,5 +413,4 @@
     </section>
 
     @include('Layout.footer')
-
 @endsection
