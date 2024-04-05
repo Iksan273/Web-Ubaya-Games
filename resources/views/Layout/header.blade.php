@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="/">
                 <figure class="mb-0"><img src="{{ asset('assets/images/logoUGMINI.png') }}" alt="">
                 </figure>
             </a>
