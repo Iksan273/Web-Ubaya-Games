@@ -1,8 +1,8 @@
-@extends('layout.user')
+@extends('Layout.user')
 @section('title')
     Status Pendaftaran
 @endsection
-@include('layout.header')
+@include('Layout.header')
 @section('content')
 @section('content')
 <div class="container mt-5">

@@ -1,10 +1,10 @@
-@extends('layout.user')
+@extends('Layout.user')
 
 
 @section('title')
     Berhasil Register
 @endsection
-@include('layout.header')
+@include('Layout.header')
 @section('content')
 <div class="container mt-5">
     <div class="row">

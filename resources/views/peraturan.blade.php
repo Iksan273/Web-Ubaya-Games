@@ -1,9 +1,9 @@
-@extends('layout.user')
+@extends('Layout.user')
 
 @section('title')
     Peraturan Umum
 @endsection
-@include('layout.header')
+@include('Layout.header')
 @section('content')
 <div class="container mt-5">
     <div class="rules-section text-white" style="background-color: rgba(245, 204, 131, 0.5); padding: 20px; border-radius: 8px; margin-bottom: 20px;">

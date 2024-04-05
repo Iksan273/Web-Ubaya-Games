@@ -1,9 +1,9 @@
-@extends('layout.user')
+@extends('Layout.user')
 
 @section('title')
     Form Esport
 @endsection
-@include('layout.header')
+@include('Layout.header')
 @section('content')
 
     <div class="container mt-5">

@@ -1,4 +1,4 @@
-@extends('layout.user')
+@extends('Layout.user')
 
 @section('title')
     Home
@@ -384,6 +384,6 @@
 
     </section>
 
-    @include('layout.footer')
+    @include('Layout.footer')
 
 @endsection
