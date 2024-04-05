@@ -2,25 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Voli;
+use App\Models\Seni;
+use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Exception;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
-class VoliController extends Controller
+class SeniController extends Controller
 {
     public function index()
     {
         $user = Auth::user();
-        $volis = Voli::all()->map(function ($voli) {
-
-            $voli->formatted_tanggal = Carbon::parse($voli->created_at)->format('d-m-Y');
-            return $voli;
-        });
-        return view('Admin.voli.voli', [
-            'volis' => $volis,
+        $senis = Seni::all();
+        return view('Admin.seni.seni', [
+            'seni' => $senis,
             'user' => $user
         ]);
     }
@@ -28,10 +25,10 @@ class VoliController extends Controller
     {
 
         $user = Auth::user();
-        $voli = Voli::findOrFail($id);
-        return view('Admin.voli.voli_edit', [
+        $seni = Seni::findOrFail($id);
+        return view('Admin.seni.seni_edit', [
             'user' => $user,
-            'voli' => $voli
+            'seni' => $seni
         ]);
     }
     public function store(Request $request)
@@ -40,12 +37,16 @@ class VoliController extends Controller
         $rules = [
             'nama_kontingen' => 'required|string|max:255',
             'fakultas' => 'required|string|max:255',
+            'cabang'=>'required|array|min:1',
             'file' => 'required|file|mimes:pdf|max:100480',
         ];
 
         $messages = [
             'nama_kontingen.required' => 'Nama kontingen harus diisi.',
             'fakultas.required' => 'Fakultas harus diisi.',
+            'cabang.required'=>'cabang harus di centang minimal 1',
+            'cabang.*.string' => 'Format cabang tidak valid.',
+            'cabang.*.max' => 'Format cabang tidak valid.',
             'file.required' => 'File harus di-upload.',
             'file.file' => 'Upload harus berupa file.',
             'file.mimes' => 'File harus dalam format PDF.',
@@ -54,74 +55,76 @@ class VoliController extends Controller
 
         $validator = Validator::make($requestData, $rules, $messages);
 
+        // dd($cabang);
         if ($validator->fails()) {
-            return redirect()->route('voli.form')
+            return redirect()->route('seni.form')
                 ->withErrors($validator)
                 ->withInput();
         }
 
         try {
+            $cabang = implode(', ', $request->cabang);
             $file = $request->file('file');
             $filename = time() . '_' . $file->getClientOriginalName();
-            $file->move(public_path('voli/files'), $filename);
+            $file->move(public_path('seni/files'), $filename);
 
-            Voli::create([
+
+            Seni::create([
                 'nama_kontingen' => $request->nama_kontingen,
                 'fakultas' => $request->fakultas,
+                'cabang'=>$cabang,
                 'file' => $filename,
             ]);
 
-            return redirect()->route('RegisterBerhasil')->with('success', 'Pendaftaran Cabang Voli Berhasil');
+            return redirect()->route('RegisterBerhasil')->with('success', 'Pendaftaran Cabang Seni  Berhasil');
         } catch (Exception $e) {
 
-            return redirect()->route('voli.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('seni.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
-
     public function update(Request $request, $id)
     {
         try {
-            $voli = Voli::findOrFail($id);
+            $seni = Seni::findOrFail($id);
 
             $updateData = [
                 'nama_kontingen' => $request->nama_kontingen,
                 'fakultas' => $request->fakultas,
+                'cabang' => $request->cabang,
                 'status' => $request->status,
                 'revisi' => $request->revisi,
             ];
 
 
 
-            $voli->update($updateData);
+            $seni->update($updateData);
 
-            return redirect()->route('admin.voli')->with('success', 'Data berhasil diupdate!');
+            return redirect()->route('admin.seni')->with('success', 'Data berhasil diupdate!');
         } catch (Exception $e) {
             return redirect()->back()->with('error', 'Terjadi kesalahan saat mengupdate data.');
         }
     }
-
-
-
     public function delete($id)
     {
 
-        $voli = Voli::find($id);
+        $seni = Seni::find($id);
 
 
-        if (!$voli) {
+        if (!$seni) {
             return redirect()->back()->with('error', 'Data tidak ditemukan!');
         }
 
 
-        $file_path = public_path('voli/files/' . $voli->file);
+        $file_path = public_path('seni/files/' . $seni->file);
         if (file_exists($file_path)) {
             unlink($file_path);
         }
 
 
-        $voli->delete();
+        $seni->delete();
 
 
-        return redirect()->route('admin.voli')->with('success', 'Data berhasil dihapus!');
+        return redirect()->route('admin.seni')->with('success', 'Data berhasil dihapus!');
     }
+
 }

@@ -8,7 +8,9 @@ use App\Http\Controllers\DanceController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EsportController;
 use App\Http\Controllers\FutsalController;
+use App\Http\Controllers\SeniController;
 use App\Http\Controllers\VoliController;
+use App\Models\Seni;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +34,11 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::view('/voli2', 'voli.index')->name('voli.index');
 Route::view('/formVoli', 'voli.register')->name('voli.form');
 Route::post('/register/voli', [VoliController::class, 'store'])->name('register.voli');
+
+// seni for user//
+
+Route::view('/formSeni', 'Seni.register')->name('seni.form');
+Route::post('/register/seni', [SeniController::class,'store'])->name('register.seni');
 
 // badminton for user//
 
@@ -71,6 +78,12 @@ Route::get('/status-pendaftaran',[DashboardController::class, 'AllData'])->name(
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/Add-admin',[DashboardController::class, 'adminForm'])->name('add-admin.form');
+
+    //- seni for admin -//
+    Route::get('/adminSeni', [SeniController::class, 'index'])->name('admin.seni');
+    Route::get('/seni/editSeni/{id}', [SeniController::class, 'edit'])->name('admin.editSeni');
+    Route::put('/seni/updateSeni/{id}', [SeniController::class, 'update'])->name('admin.updateSeni');
+    Route::delete('/seni/deleteSeni/{id}', [SeniController::class, 'delete'])->name('admin.deleteSeni');
 
     //- Voli for admin-//
     Route::get('/adminVoli', [VoliController::class, 'index'])->name('admin.voli');

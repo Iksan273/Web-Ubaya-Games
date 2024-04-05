@@ -58,6 +58,9 @@
                                             <a class="dropdown-item nav-link" href="{{ route('esport.form') }}">ESPORT</a>
                                         </li>
                                         <li class="nav-item">
+                                            <a class="dropdown-item nav-link" href="{{ route('seni.form') }}">SENI</a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="dropdown-item nav-link" href="{{ url('/status-pendaftaran') }}">Status Pendaftaran</a>
                                         </li>
 
@@ -196,7 +199,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-3 mt-3">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="create-sell_box_content" data-aos="fade-left">
 
@@ -233,6 +236,22 @@
                     </div>
                 </div>
             </div>
+            <div class="row mb-3 mt-3 justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="create-sell_box_content" data-aos="fade-up">
+
+                        <span class="material-symbols-outlined">
+                            palette
+                        </span>
+
+                        <h3>Seni</h3>
+                        <p class="sub_p">Cabang seni terdiri dari menulis cerpen, fotografi, komik strip, seni lukis, desain poster, Untuk informasi lebih lanjut silakan hubungi koordinator cabang kami:</p>
+                        <p><strong>Koordinator: </strong>Kezia</p>
+                        <p><strong>ID Line: </strong><span >keziajessicaa_</span></p>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </section>

@@ -225,6 +225,40 @@
             </div>
         </div>
     </div>
+     <!-- Tabel Seni -->
+     <div class="card mb-5">
+        <div class="card-body">
+            <h2 class="text-center mb-3 text-dark">Cabang Seni</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead style="background-color: #2600ff; color: #FFFFFF;">
+                        <tr>
+                            <th>Nama Kontingen</th>
+                            <th>Fakultas</th>
+                            <th>Status</th>
+                            <th>Revisi</th>
+                            <th>Tanggal Daftar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($seni as $data)
+                            <tr>
+                                <td>{{ $data->nama_kontingen }}</td>
+                                <td>{{ $data->fakultas }}</td>
+                                <td>
+                                    <span class="badge {{ $data->status == 'pending' ? 'bg-primary' : ($data->status == 'accepted' ? 'bg-success' : 'bg-danger') }}">
+                                        {{ ucfirst($data->status) }}
+                                    </span>
+                                </td>
+                                <td>{{ $data->revisi }}</td>
+                                <td>{{ $data->created_at->format('Y-m-d') }}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
 

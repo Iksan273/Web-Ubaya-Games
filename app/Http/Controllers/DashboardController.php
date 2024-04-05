@@ -7,6 +7,7 @@ use App\Models\Basket;
 use App\Models\Dance;
 use App\Models\Esport;
 use App\Models\Futsal;
+use App\Models\Seni;
 use App\Models\Voli;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,6 +24,7 @@ class DashboardController extends Controller
     $basketCount = Basket::count();
     $esportCount = Esport::count();
     $voliCount = Voli::count();
+    $seniCount=Seni::count();
 
     return view('Admin.dashboard', [
         'user' => $user,
@@ -32,6 +34,7 @@ class DashboardController extends Controller
         'basketCount' => $basketCount,
         'esportCount' => $esportCount,
         'voliCount' => $voliCount,
+        'seniCount'=>$seniCount,
     ]);
 }
 public function AllData()
@@ -44,6 +47,7 @@ public function AllData()
     $basketCount = Basket::all();
     $esportCount = Esport::all();
     $voliCount = Voli::all();
+    $seniCount=Seni::all();
 
     return view('status', [
         'dance' => $danceCount,
@@ -52,6 +56,7 @@ public function AllData()
         'basket' => $basketCount,
         'esport' => $esportCount,
         'voli' => $voliCount,
+        'seni'=> $seniCount
     ]);
 }
 

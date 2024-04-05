@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('senis', function (Blueprint $table) {
+            $table->id();
+            $table->string('name_kontingen');
+            $table->string('fakultas');
+            $table->string('cabang');
+            $table->string('status')->default('pending');
+            $table->text('revisi')->default('-');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('senis');
+    }
+};

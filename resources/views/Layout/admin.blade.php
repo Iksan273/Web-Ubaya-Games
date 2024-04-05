@@ -114,6 +114,15 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href=""><i class="material-icons-two-tone">folder</i>Seni<i
+                                class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="{{ route('admin.seni') }}">Data Seni</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
