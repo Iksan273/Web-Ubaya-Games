@@ -45,10 +45,10 @@
                                     <a class="dropdown-item nav-link" href="{{ route('dance.form') }}">DANCE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('esport.form') }}">ESPORT</a>
+                                    <a class="dropdown-item nav-link" href="{{ route('esport.form') }}">SENI</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('seni.form') }}">seni</a>
+                                    <a class="dropdown-item nav-link" href="{{ route('seni.form') }}">SENI</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="dropdown-item nav-link" href="{{ url('/status-pendaftaran') }}">Status Pendaftaran</a>
