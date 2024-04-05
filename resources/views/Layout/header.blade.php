@@ -29,30 +29,7 @@
                             aria-expanded="false"> Pendaftaran </a>
                         <div class="dropdown-menu drop-down-content">
                             <ul class="list-unstyled drop-down-pages">
-                                <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('basket.form') }}">BASKET</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('voli.form') }}">VOLI</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('futsal.form') }}">FUTSAL</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('badminton.form') }}">BADMINTON</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('dance.form') }}">DANCE</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('esport.form') }}">SENI</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('seni.form') }}">SENI</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ url('/status-pendaftaran') }}">Status Pendaftaran</a>
-                                </li>
+
 
                             </ul>
                         </div>
