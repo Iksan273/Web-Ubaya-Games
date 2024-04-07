@@ -13,7 +13,7 @@
             <ol style="color: white; font-size: 20px;">
                 <li>Download Formulir Pendaftaran di sini:
                     <!-- Button untuk download formulir -->
-                    <a href="https://docs.google.com/document/d/1lP6f8ppHrtqUwC3qX5s7ctZPZPZbBmof/edit?usp=drive_link"
+                    <a href="https://docs.google.com/document/d/1kPs1TxnE_-_oLx66jpvRq5vc7Wpuxw3qR4bbnbtHZTM/edit?usp=drive_link"
                         class="btn btn-primary" style="margin-top: 10px;">Download Formulir</a>
                 </li>
                 <!-- Tambahkan list lain di sini -->

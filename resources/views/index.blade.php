@@ -269,7 +269,7 @@
             <div class="row mb-10">
                 <div class="col-lg-12">
                     <div class="create_sell-content">
-                        <h2 class="mb-4" data-aos="fade-down"> Kontak Kontingen <span> Fakultas </span></h2>
+                        <h2 class="mb-4" data-aos="fade-down"> Kontak Kontingen <span> Fakultas & Politeknik </span></h2>
                     </div>
                 </div>
             </div>
