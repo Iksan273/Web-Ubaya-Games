@@ -41,6 +41,19 @@ body {
     transition: background .2s ease-in-out;
 }
 
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 60px); /* Sesuaikan jika ada header di atas modal */
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        display: block;
+        margin-top: 10%;
+    }
+}
+
 a {
     color: #3599fd;
 }
