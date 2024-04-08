@@ -53,6 +53,12 @@ body {
         margin-top: 10%;
     }
 }
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 10% auto;
+    }
+}
+
 
 a {
     color: #3599fd;

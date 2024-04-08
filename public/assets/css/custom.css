@@ -12,6 +12,12 @@
         margin-top: 10%;
     }
 }
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 10% auto;
+    }
+}
+
 
 /* Card Widget */
 .card {

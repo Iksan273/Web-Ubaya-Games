@@ -40,9 +40,10 @@
                                     <td>{{ $data->fakultas }}</td>
                                     <td>
 
-                                            <a href="{{ asset('basket/files/' . $data->file) }}" style="color: white; text-decoration: none;">
-                                                <button type="button" class="btn btn-success text-white"> View </button>
-                                            </a>
+                                        <a href="{{ asset('basket/files/' . $data->file) }}"
+                                            style="color: white; text-decoration: none;">
+                                            <button type="button" class="btn btn-success text-white"> View </button>
+                                        </a>
                                         &nbsp; <!-- Menambahkan spasi antara tombol -->
                                         <a href="{{ asset('basket/files/' . $data->file) }}" download="{{ $data->file }}">
                                             <button type="button" class="btn btn-primary">
@@ -106,9 +107,9 @@
             if (pdfViewer.style.display === "none") {
                 pdfViewer.style.display = "block";
             } else {
-                pdfViewer.style.display = "none"; // Opsional: Tambahkan ini jika Anda ingin tombol juga menyembunyikan <iframe> saat ditekan lagi
+                pdfViewer.style.display =
+                "none"; // Opsional: Tambahkan ini jika Anda ingin tombol juga menyembunyikan <iframe> saat ditekan lagi
             }
         }
-        </script>
-
+    </script>
 @endsection
