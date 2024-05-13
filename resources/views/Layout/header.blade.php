@@ -57,6 +57,27 @@
                             </ul>
                         </div>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> Pengumpulan </a>
+                        <div class="dropdown-menu drop-down-content">
+                            <ul class="list-unstyled drop-down-pages">
+                                <li class="nav-item">
+                                    <a class="dropdown-item nav-link" href="{{ route('pengumpulan.cerpen') }}">CERPEN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item nav-link" href="{{ route('pengumpulan.foto') }}">FOTOGRAFI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item nav-link" href="{{ route('pengumpulan.komik') }}">KOMIK</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item nav-link" href="{{ route('pengumpulan.poster') }}">POSTER</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>

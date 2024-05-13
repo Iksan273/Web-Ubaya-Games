@@ -4,12 +4,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BadmintonController;
 use App\Http\Controllers\BasketController;
+use App\Http\Controllers\CerpenController;
 use App\Http\Controllers\DanceController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EsportController;
+use App\Http\Controllers\FotoController;
 use App\Http\Controllers\FutsalController;
+use App\Http\Controllers\KomikController;
+use App\Http\Controllers\PosterController;
 use App\Http\Controllers\SeniController;
 use App\Http\Controllers\VoliController;
+use App\Models\Cerpen;
 use App\Models\Seni;
 
 /*
@@ -65,6 +70,20 @@ Route::post('/register/dance', [DanceController::class, 'store'])->name('registe
 Route::view('/formEsport', 'Esport.register')->name('esport.form');
 Route::post('/register/esport', [EsportController::class, 'store'])->name('register.esport');
 
+//pengumpulan
+Route::view('/berhasil/pengumpulan', 'Seni.berhasil')->name('pengumpulan.berhasil');
+Route::view('/pengumpulan/cerpen', 'Seni.cerpen')->name('cerpen.form');
+Route::post('store/cerpen', [CerpenController::class, 'store'])->name('pengumpulan.cerpen');
+
+Route::view('/pengumpulan/foto', 'Seni.foto')->name('foto.form');
+Route::post('store/foto', [FotoController::class, 'store'])->name('pengumpulan.foto');
+
+Route::view('/pengumpulan/komik', 'Seni.komik')->name('komik.form');
+Route::post('store/komik', [KomikController::class, 'store'])->name('pengumpulan.komik');
+
+Route::view('/pengumpulan/poster', 'Seni.poster')->name('poster.form');
+Route::post('store/poster', [PosterController::class, 'store'])->name('pengumpulan.poster');
+
 Route::get('/peraturan', function () {
     return view('peraturan');
 })->name('peraturan');
@@ -80,6 +99,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/Add-admin',[DashboardController::class, 'adminForm'])->name('add-admin.form');
 
     //- seni for admin -//
+    Route::get('/adminCerpen', [CerpenController::class, 'index'])->name('admin.cerpen');
+    Route::get('/adminKomik', [KomikController::class, 'index'])->name('admin.komik');
+    Route::get('/adminPoster', [PosterController::class, 'index'])->name('admin.poster');
+    Route::get('/adminFoto', [FotoController::class, 'index'])->name('admin.foto');
+    Route::delete('/Foto/deleteFoto/{id}', [FotoController::class, 'delete'])->name('admin.deleteFoto');
+    Route::delete('/komik/deleteKomik/{id}', [KomikController::class, 'delete'])->name('admin.deleteKomik');
+    Route::delete('/cerpen/deleteCerpen/{id}', [CerpenController::class, 'delete'])->name('admin.deleteCerpen');
+    Route::delete('/poster/deletePoster/{id}', [PosterController::class, 'delete'])->name('admin.deletePoster');
     Route::get('/adminSeni', [SeniController::class, 'index'])->name('admin.seni');
     Route::get('/seni/editSeni/{id}', [SeniController::class, 'edit'])->name('admin.editSeni');
     Route::put('/seni/updateSeni/{id}', [SeniController::class, 'update'])->name('admin.updateSeni');

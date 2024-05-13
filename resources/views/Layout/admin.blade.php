@@ -123,6 +123,24 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href=""><i class="material-icons-two-tone">folder</i>Pengumpulan<i
+                                class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="{{ route('admin.cerpen') }}">Cerpen</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.komik') }}">Komik</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.foto') }}">Fotografi</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.poster') }}">Poster</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
