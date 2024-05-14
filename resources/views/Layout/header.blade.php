@@ -64,16 +64,16 @@
                         <div class="dropdown-menu drop-down-content">
                             <ul class="list-unstyled drop-down-pages">
                                 <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('pengumpulan.cerpen') }}">CERPEN</a>
+                                    <a class="dropdown-item nav-link" href="{{ route('cerpen.form') }}">CERPEN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('pengumpulan.foto') }}">FOTOGRAFI</a>
+                                    <a class="dropdown-item nav-link" href="{{ route('foto.form') }}">FOTOGRAFI</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('pengumpulan.komik') }}">KOMIK</a>
+                                    <a class="dropdown-item nav-link" href="{{ route('komik.form') }}">KOMIK</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item nav-link" href="{{ route('pengumpulan.poster') }}">POSTER</a>
+                                    <a class="dropdown-item nav-link" href="{{ route('poster.form') }}">POSTER</a>
                                 </li>
                             </ul>
                         </div>
