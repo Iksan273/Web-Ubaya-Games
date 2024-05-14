@@ -151,17 +151,17 @@ class FotoController extends Controller
                 'foto3_kategori1' => $filename3 ,
                 'foto4_kategori1' => $filename4 ,
                 'foto5_kategori1' => $filename5 ,
-              
+
                 'foto1_kategori2' => $filename6 ,
                 'foto2_kategori2' => $filename7 ,
                 'foto3_kategori2' => $filename8 ,
                 'foto4_kategori2' => $filename9 ,
                 'foto5_kategori2' => $filename10 ,
-               
+
             ]);
             Log::info('Data berhasil disimpan ke database.');
 
-            return redirect()->route('RegisterBerhasil')->with('success', 'Pendaftaran Berhasil');
+            return redirect()->route('RegisterBerhasil')->with('success', 'Pengumpulan Fotografi Berhasil');
         } catch (Exception $e) {
             Log::error('Terjadi kesalahan saat menyimpan data: ' . $e->getMessage());
             return redirect()->route('cerpen.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');

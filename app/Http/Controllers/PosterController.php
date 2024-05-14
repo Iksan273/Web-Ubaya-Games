@@ -75,7 +75,7 @@ class PosterController extends Controller
                 'file' => $filename,
             ]);
 
-            return redirect()->route('RegisterBerhasil')->with('success', 'Pendaftaran Cabang Badminton Berhasil');
+            return redirect()->route('RegisterBerhasil')->with('success', 'Pengumpulan Poster Berhasil');
         } catch (Exception $e) {
 
             return redirect()->route('poster.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');

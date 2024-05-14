@@ -78,7 +78,7 @@ class CerpenController extends Controller
             ]);
             Log::info('Data berhasil disimpan ke database.');
 
-            return redirect()->route('pengumpulan.berhasil')->with('success', 'Pendaftaran Cabang Badminton Berhasil');
+            return redirect()->route('pengumpulan.berhasil')->with('success', 'Pengumpulan Cerpen Berhasil');
         } catch (Exception $e) {
             Log::error('Terjadi kesalahan saat menyimpan data: ' . $e->getMessage());
             return redirect()->route('cerpen.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
