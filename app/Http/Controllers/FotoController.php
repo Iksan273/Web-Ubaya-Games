@@ -146,19 +146,18 @@ class FotoController extends Controller
                 'nama' => $request->nama,
                 'nrp' => $request->nrp,
                 'kontingen' => $request->kontingen,
-                // Foto kategori 1
                 'foto1_kategori1' => $filename1 ,
                 'foto2_kategori1' => $filename2 ,
                 'foto3_kategori1' => $filename3 ,
                 'foto4_kategori1' => $filename4 ,
                 'foto5_kategori1' => $filename5 ,
-                // Foto kategori 2
+              
                 'foto1_kategori2' => $filename6 ,
                 'foto2_kategori2' => $filename7 ,
                 'foto3_kategori2' => $filename8 ,
                 'foto4_kategori2' => $filename9 ,
                 'foto5_kategori2' => $filename10 ,
-                // Tambahkan kolom lainnya sesuai kebutuhan
+               
             ]);
             Log::info('Data berhasil disimpan ke database.');
 
