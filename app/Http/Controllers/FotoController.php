@@ -161,10 +161,10 @@ class FotoController extends Controller
             ]);
             Log::info('Data berhasil disimpan ke database.');
 
-            return redirect()->route('RegisterBerhasil')->with('success', 'Pengumpulan Fotografi Berhasil');
+            return redirect()->route('pengumpulan.berhasil')->with('success', 'Pengumpulan Fotografi Berhasil');
         } catch (Exception $e) {
             Log::error('Terjadi kesalahan saat menyimpan data: ' . $e->getMessage());
-            return redirect()->route('cerpen.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
+            return redirect()->route('foto.form')->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 
