@@ -41,7 +41,7 @@
                                     <td>{{ $data->nrp }}</td>
                                     <td>{{ $data->kontingen }}</td>
                                     <td>
-                                        <a href="#" style="color: white; text-decoration: none;" data-bs-toggle="modal" data-bs-target="#viewModal{{ $data->id }}">
+                                        <a href="{{ asset('komik/files/' . $data->foto_komik) }}" style="color: white; text-decoration: none;">
                                             <button type="button" class="btn btn-success text-white"> View </button>
                                         </a>
                                     </td>

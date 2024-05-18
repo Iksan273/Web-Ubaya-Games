@@ -27,7 +27,7 @@
                 <input type="text" class="form-control" id="kontingen" name="kontingen" required>
             </div>
             <div class="form-group">
-                <p>File (jpg/png/jpeg Only)</p>
+                <p>File (PDF/jpg/png/jpeg Only)</p>
                <button class="btn btn-primary"> <input type="file" class="form-control-file" id="file" name="file" required ></button>
             </div>
             <button type="submit" class="btn btn-success">Submit</button>

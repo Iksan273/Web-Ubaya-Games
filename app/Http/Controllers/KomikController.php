@@ -43,7 +43,7 @@ class KomikController extends Controller
             'nama' => 'required|string|max:255',
             'nrp' => 'required|string|max:255',
             'kontingen' => 'required|string|max:255',
-            'file' => 'required|image|mimes:jpeg,png,jpg,gif|max:100480',
+            'file' => 'required|mimes:jpeg,png,jpg,gif,pdf|max:100480',
         ];
 
         $messages = [
@@ -51,8 +51,7 @@ class KomikController extends Controller
             'fakultas.required' => 'Fakultas harus diisi.',
             'nrp.required' => 'Fakultas harus diisi.',
             'file.required' => 'File harus di-upload.',
-            'file.image' => 'Upload harus berupa gambar.',
-            'file.mimes' => 'File harus dalam format Jpeg,Png,jpg,gif.',
+            'file.mimes' => 'File harus dalam format PDF,Jpeg,Png,jpg,gif.',
             'file.max' => 'File tidak boleh lebih besar dari 100MB.',
         ];
 
