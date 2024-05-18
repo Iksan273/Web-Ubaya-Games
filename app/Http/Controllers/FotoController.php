@@ -64,7 +64,7 @@ class FotoController extends Controller
         $validator = Validator::make($requestData, $rules, $messages);
 
         if ($validator->fails()) {
-            return redirect()->route('cerpen.form')
+            return redirect()->route('foto.form')
                 ->withErrors($validator)
                 ->withInput();
         }
